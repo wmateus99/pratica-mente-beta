@@ -1,0 +1,52 @@
+.section-atividade {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    /* color: #fff; */
+    /* background: #000; */
+    background: #f6feff;
+}
+
+.atividade-title {
+    
+}
+
+.instrucoes p {
+    max-width: 750px;
+    padding: 10px 0px;
+}
+
+body {
+    /* background: #000; */
+}
+
+
+
+
+
+
+
+
+
+
+table {
+    width: 60%;
+    cursor: cell;
+    margin: 20px 0;
+    user-select: none;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #7e7e7e;
+}
+th {
+    background-color: #d7faff;
+}
+td {
+    height: 25px;
+}
+.cell-none {
+    border: none;
+}

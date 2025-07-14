@@ -1,0 +1,10 @@
+.content-atividades {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.atividade-title {
+    margin: 50px 0px;
+    width: 100%;
+    border-bottom: 1px solid #cecece
+}
