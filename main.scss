@@ -1,0 +1,42 @@
+// sass --watch main.scss:public/css/main.css
+// @mixin centralizar {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+// .caixa {
+//     @include centralizar;
+// }
+
+// @mixin botao($tipo) {
+//   padding: 10px 20px;
+//   border: none;
+//   border-radius: 5px;
+//   font-weight: bold;
+//   color: white;
+//   cursor: pointer;
+
+//   @if $tipo == primario {
+//     background-color: #3498db;
+//   } @else if $tipo == secundario {
+//     background-color: #2ecc71;
+//   } @else if $tipo == perigo {
+//     background-color: #e74c3c;
+//   } @else {
+//     background-color: gray;
+//   }
+
+//   &:hover {
+//     opacity: 0.9;
+//   }
+// }
+
+@use 'src/scss/default';
+@use 'src/scss/logo';
+@use 'src/scss/nav-menu';
+@use 'src/scss/content-home';
+@use 'src/scss/welcome';
+@use 'src/scss/ranking';
+@use 'src/scss/cards';
+
+

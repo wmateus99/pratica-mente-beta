@@ -1,0 +1,17 @@
+.nav-menu {
+    top: 0px;
+    z-index: 999;
+    height: 40px;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    background: #289DB9;
+    justify-content: space-evenly;
+    a {
+        color: #fff;
+        outline: none;
+        font-weight: 600;
+        text-decoration: none;
+        &:hover{color: #f1f1f1;}
+    }
+}

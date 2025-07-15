@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/public/css/main.css">
     <title>...</title>
 </head>
 <body>
     <div class="logo">
-        <img src="/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
+        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
     </div>
 
-    <nav class="nav-menu">
-        <!-- <a href="">Início</a>
-        <a href="">Atividades</a>
-        <a href="">Revisão</a>
-        <a href="">Textos</a> -->
-    </nav>
+    <nav class="nav-menu"></nav>
 
+    <div class="ranking">
+        <div class="stock-ticker" title="Rank dos melhores na digitação!" onclick="window.location ='https://google.com.br'">
+            <div class="rank">
+                <div>
+                    <span class="r1">1. </span>
+                    <span id="rank-01">Carregando...</span>
+                </div>
+                <div>
+                    <span>2. </span>
+                    <span id="rank-02">Carregando...</span>
+                </div>
+                <div>
+                    <span>3. </span>
+                    <span id="rank-03">Carregando...</span>
+                </div>
+            </div>
+            <div class="rank">
+                <div>
+                    <span class="r1">1. </span>
+                    <span id="rank-001">Carregando...</span>
+                </div>
+                <div>
+                    <span>2. </span>
+                    <span id="rank-002">Carregando...</span>
+                </div>
+                <div>
+                    <span>3. </span>
+                    <span id="rank-003">Carregando...</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <section class="content-home">
             <main class="welcome">
@@ -26,50 +53,96 @@
                     <p>Aqui você encontrará um espaço para praticar e evoluir suas habilidades. Este ambiente foi criado para apoiar seu crescimento de forma prática e eficiente.</p>
                 </div>
             </main>
-            <div class="nav-links">
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/img/cards/pri-aula.svg" alt="">
-                    </div>
-                    <div class="card-bottom">
-                        <h3>Primeira Aula</h3>
-                        <span>Todo grande começo começa com o primeiro passo. Aproveite sua primeira aula!</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/img/cards/game-digitacao.svg" alt="">
-                    </div>
-                    <div class="card-bottom">
-                        <h3>Jogo de Digitação</h3>
-                        <span>Desafie seus dedos e turbine sua velocidade no jogo de digitação!</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/img/cards/Tsi.svg" alt="">
-                    </div>
-                    <div class="card-bottom">
-                        <h3>Plataforma TsiFLix</h3>
-                        <span>Conhecimento na tela, no seu tempo: explore tudo o que a TSIFLIX oferece!</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-top">
-                        <img src="/img/cards/qr-tsi.svg" alt="">
-                    </div>
-                    <div class="card-bottom">
-                        <h3>Avalie a Escola Tsi</h3>
-                        <span>Sua opinião transforma! Avalie a Escola TSI e nos ajude a evoluir.</span>
-                    </div>
-                </div>
-            </div>
+            <div class="cards card-home"></div>
         </section>
         <section class="content-atividades">
+            <br> <br>
             <h2 class="atividade-title">Atalhos para Atividades</h2>
+            <div class="cards atividades"></div>
         </section>
     </div>
 
 <script type="module" src="/script.js"></script>
+<script type="module">
+    //Importações
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+    import { getFirestore, collection, doc, getDoc, setDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+
+    //Configuração
+    const firebaseConfig = {
+        apiKey: "AIzaSyBqrtUfo7aAfySvWPQ8nLqRdH1Dt-yjDlY",
+        authDomain: "game-digitacao-4285e.firebaseapp.com",
+        projectId: "game-digitacao-4285e",
+        storageBucket: "game-digitacao-4285e.appspot.com",
+        messagingSenderId: "569609192666",
+        appId: "1:569609192666:web:84393a4b4ae0dfea3191e3",
+        measurementId: "G-QBGVE2H3J8"
+    };
+
+    //Inicializa Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const analytics = getAnalytics(app);
+
+    //Disponível globalmente
+    window.firebaseApp = app;
+    window.firebaseDb = db;
+    window.firebaseTools = {
+        collection,
+        doc,
+        getDoc,
+        setDoc,
+        getDocs
+    };
+
+
+async function listarJogadores() {
+    const db = window.firebaseDb;
+    const { collection, getDocs } = window.firebaseTools;
+
+    const jogadoresCol = collection(db, "jogadores");
+    const snapshot = await getDocs(jogadoresCol);
+
+    const lista = [];
+
+    snapshot.forEach(doc => {
+        const data = doc.data();
+        lista.push({
+            nome: data.nome || "Sem nome",
+            level: data.level || 0,
+            score: data.score || 0
+        });
+    });
+
+    // Ordenar do maior para o menor por score
+    const ordenada = lista.sort((a, b) => b.score - a.score);
+
+    // Armazenar em variáveis separadas
+    const top1 = ordenada[0] || null;
+    const top2 = ordenada[1] || null;
+    const top3 = ordenada[2] || null;
+
+    console.log("Top 1 jogador:", top1);
+    console.log("Top 2 jogador:", top2);
+    console.log("Top 3 jogador:", top3);
+
+    if (top1) {
+        document.getElementById("rank-01").innerHTML = `${top1.nome} - Nível ${top1.level} ⭐`;
+        document.getElementById("rank-001").innerHTML = `${top1.nome} - Nível ${top1.level} ⭐`;
+    }
+    if (top2) {
+        document.getElementById("rank-02").innerHTML = `${top2.nome} - Nível ${top2.level}`;
+        document.getElementById("rank-002").innerHTML = `${top2.nome} - Nível ${top2.level}`;
+    }
+    if (top3) {
+        document.getElementById("rank-03").innerHTML = `${top3.nome} - Nível ${top3.level}`;
+        document.getElementById("rank-003").innerHTML = `${top3.nome} - Nível ${top3.level}`;
+    }
+
+}
+listarJogadores();
+
+</script>
 </body>
 </html>
