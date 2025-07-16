@@ -18,7 +18,7 @@ export const cardsProntos = [
             titulo: 'Jogo de Digitação',
             descricao: 'Desafie seus dedos e turbine sua velocidade no jogo de digitação!',
             imagem: '/public/img/cards/game-digitacao.svg',
-            link: 'https://google.com'
+            link: 'src/pages/digitacao/digitar.html'
         })
     },
     {

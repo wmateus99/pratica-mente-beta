@@ -14,8 +14,6 @@ window.addEventListener("DOMContentLoaded", () => {
         const divDestino = document.querySelector(container);
         if (divDestino) {
             divDestino.appendChild(card);
-        } else {
-            console.warn(`Container "${container}" não encontrado na página.`);
         }
     });
 

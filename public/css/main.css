@@ -127,6 +127,9 @@ label {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
   max-width: 1200px;
@@ -374,6 +377,10 @@ label {
   flex-wrap: wrap;
   background-color: aqua;
   justify-content: space-evenly;
+}
+
+.section-atividade {
+  max-width: 750px;
 }
 
 /*# sourceMappingURL=main.css.map */
