@@ -89,13 +89,13 @@ button, input, select, textarea {
 }
 
 button {
-  background-color: #000;
   color: white;
   cursor: pointer;
+  background-color: #20778d;
   transition: background 0.3s;
 }
 button:hover {
-  background-color: black;
+  background-color: rgb(24.7765957447, 94.7340425532, 112.2234042553);
 }
 
 input:focus,
@@ -321,6 +321,59 @@ label {
 .cards .card .card-bottom span {
   line-height: 1.1;
   color: #515151;
+}
+
+.footer-container {
+  margin-top: 150px;
+  display: flex;
+  padding: 2rem;
+  color: #f1f1f1;
+  align-items: center;
+  background-color: #289DB9;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    gap: 1.5rem;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+.footer-container .footer-section {
+  max-width: 300px;
+}
+.footer-container .footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.footer-container .footer-section h3 a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-container .footer-section h3 a:hover {
+  color: #00bcd4;
+}
+.footer-container .footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+.card-digitacao {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: brown;
+}
+.card-digitacao .game-info {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aqua;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=main.css.map */

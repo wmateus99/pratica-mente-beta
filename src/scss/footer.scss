@@ -1,0 +1,41 @@
+.footer-container {
+    margin-top: 150px;
+    display: flex;
+    padding: 2rem;
+    color: #f1f1f1;
+    align-items: center;
+    background-color: #289DB9;
+    justify-content: space-around;
+
+    // Responsivo
+    @media (max-width: 768px) {
+        gap: 1.5rem;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer-section {
+        max-width: 300px;
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+
+            a {
+                color: #f1f1f1;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #00bcd4;
+                }
+            }
+        }
+
+        p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            color: #ccc;
+        }
+    }
+}

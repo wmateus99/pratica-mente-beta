@@ -1,0 +1,15 @@
+.card-digitacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: brown;
+    .game-info {
+        width: 80%;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: aqua;
+        justify-content: space-evenly;
+    }
+}

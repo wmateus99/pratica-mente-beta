@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/public/css/main.css">
+        <title>...</title>
+    </head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<body>
+    <div class="logo">
+        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
+    </div>
+
+    <nav class="nav-menu"></nav>
+
+    <div class="ranking">
+        <div class="stock-ticker" title="Rank dos melhores na digitação!" onclick="window.location ='https://google.com.br'">
+            <div class="rank">
+                <div>
+                    <span class="r1">1. </span>
+                    <span id="rank-01">Carregando...</span>
+                </div>
+                <div>
+                    <span>2. </span>
+                    <span id="rank-02">Carregando...</span>
+                </div>
+                <div>
+                    <span>3. </span>
+                    <span id="rank-03">Carregando...</span>
+                </div>
+            </div>
+            <div class="rank">
+                <div>
+                    <span class="r1">1. </span>
+                    <span id="rank-001">Carregando...</span>
+                </div>
+                <div>
+                    <span>2. </span>
+                    <span id="rank-002">Carregando...</span>
+                </div>
+                <div>
+                    <span>3. </span>
+                    <span id="rank-003">Carregando...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button style="position: absolute; top: 10px; left: 10px;" onclick="window.location='/index.html'">Voltar</button>
+    <button style="position: absolute; top: 10px; right: 10px;" onclick="window.location='./historico.html'">Histórico</button>
+    <div class="container">
+        <h1 class="game-title">Jogo de Digitação</h1>
+        
+        <div class="card-digitacao">
+            <div class="game-info">
+                <div class="info-item">
+                    <span>Nível:</span>
+                    <span id="level">1</span>
+                </div>
+                <div class="info-item">
+                    <span id="time">90</span>s
+                </div>
+                <div class="info-item">
+                    <span>Pontuação:</span>
+                    <span id="score">0</span>
+                </div>
+            </div>
+            
+            <!-- Barra de progresso -->
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <div class="progress-text">
+                <span id="words-count">0</span>/<span id="words-target">10</span> palavras para o próximo nível
+            </div>
+
+            <div class="game-area">
+                <div id="word-display" class="word-display">Pressione Iniciar</div>
+                <input type="text" id="word-input" class="word-input" autocomplete="off" disabled>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="btn">Iniciar</button>
+                <button id="pause-btn" class="btn" disabled>Pausar</button>
+            </div>
+        </div>
+    </div>
+
+<script src="palavras.js"></script>
+<script src="script.js"></script>
+
+<script type="module">
+    // Importações
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+    import { getFirestore, collection, doc, getDoc, setDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+
+    // Configuração
+    const firebaseConfig = {
+        apiKey: "AIzaSyBqrtUfo7aAfySvWPQ8nLqRdH1Dt-yjDlY",
+        authDomain: "game-digitacao-4285e.firebaseapp.com",
+        projectId: "game-digitacao-4285e",
+        storageBucket: "game-digitacao-4285e.appspot.com",
+        messagingSenderId: "569609192666",
+        appId: "1:569609192666:web:84393a4b4ae0dfea3191e3",
+        measurementId: "G-QBGVE2H3J8"
+    };
+
+    // Inicializa Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const analytics = getAnalytics(app);
+
+    // Disponível globalmente
+    window.firebaseApp = app;
+    window.firebaseDb = db;
+    window.firebaseTools = {
+        collection,
+        doc,
+        getDoc,
+        setDoc,
+        getDocs
+    };
+</script>
+</body>
+</html>

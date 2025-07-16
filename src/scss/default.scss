@@ -84,13 +84,13 @@ button, input, select, textarea {
 }
 
 button {
-    background-color: $cor-texto;
     color: white;
     cursor: pointer;
+    background-color: #20778d;
     transition: background 0.3s;
 
     &:hover {
-        background-color: darken($cor-texto, 10%);
+        background-color: darken(#22829a, 10%);
     }
 }
 
