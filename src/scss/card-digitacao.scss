@@ -12,4 +12,34 @@
         background-color: aqua;
         justify-content: space-evenly;
     }
+    .game-area {
+        width: 80%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
+        background-color: aqua;
+        .word-display {
+            width: 100%;
+            padding: 15px;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            background-color: blueviolet;
+        }
+        .word-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 28px;
+            text-align: center;
+            border-radius: 20px;
+            background: #fff;
+        }
+    }
+    .controls {
+        padding: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }

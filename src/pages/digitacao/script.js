@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const levelDisplay = document.getElementById('level');
     const startBtn = document.getElementById('start-btn');
     const pauseBtn = document.getElementById('pause-btn');
+    const desistirBtn = document.getElementById('desistir-btn');
     
     // Novos elementos para o progresso
     const progressBar = document.getElementById('progress-bar');
@@ -148,6 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
         pauseBtn.disabled = true;
         salvarProgresso()
     }
+    
+    //Desistir do jogo
+    desistirBtn.addEventListener("click", () => {
+        console.log("Ola")
+    })
+    
     
     // Verificar a palavra digitada
     function checkMatch() {
@@ -280,29 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
         Swal.fire("Sucesso", "Progresso salvo!", "success");
         console.log("Progresso salvo!");
     }
-
-// salvarProgresso()
-
-
-//     async function listarJogadores() {
-//         const db = window.firebaseDb;
-//         const { collection, getDocs } = window.firebaseTools;
-
-//         const jogadoresCol = collection(db, "jogadores");
-//         const snapshot = await getDocs(jogadoresCol);
-
-//         const lista = [];
-
-//         snapshot.forEach(doc => {
-//             const data = doc.data();
-//             lista.push({
-//                 nome: data.nome || "Sem nome",
-//                 level: data.level || 0,
-//                 score: data.score || 0
-//             });
-//         });
-//     }
-// listarJogadores()
 
     function setFavicon(url) {
         let link = document.querySelector("link[rel~='icon']");

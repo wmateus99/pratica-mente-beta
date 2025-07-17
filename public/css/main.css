@@ -127,9 +127,6 @@ label {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   margin: 0 auto;
   max-width: 1200px;
@@ -378,9 +375,40 @@ label {
   background-color: aqua;
   justify-content: space-evenly;
 }
+.card-digitacao .game-area {
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+}
+.card-digitacao .game-area .word-display {
+  width: 100%;
+  padding: 15px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  background-color: blueviolet;
+}
+.card-digitacao .game-area .word-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 28px;
+  text-align: center;
+  border-radius: 20px;
+  background: #fff;
+}
+.card-digitacao .controls {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .section-atividade {
   max-width: 750px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
