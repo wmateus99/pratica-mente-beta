@@ -1,49 +1,4 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme switching functionality
-    const themeOptions = document.querySelectorAll('.theme-option');
-    
-    // Set cyan as default theme
-    document.body.classList.add('cyan-theme');
-    
-    themeOptions.forEach(option => {
-        option.addEventListener('click', () => {
-            const theme = option.getAttribute('data-theme');
-            
-            // Remove all theme classes
-            document.body.classList.remove('light-theme', 'cyan-theme', 'pink-theme', 'green-theme', 'orange-theme');
-            
-            // Add the selected theme class (except for dark which is default)
-            if (theme !== 'dark') {
-                document.body.classList.add(`${theme}-theme`);
-            }
-            
-            // Update active state
-            themeOptions.forEach(opt => opt.classList.remove('active'));
-            option.classList.add('active');
-            
-            // Save theme preference
-            localStorage.setItem('preferred-theme', theme);
-        });
-    });
-    
-    // Load saved theme preference or set cyan as default
-    const savedTheme = localStorage.getItem('preferred-theme');
-    if (savedTheme) {
-        const themeOption = document.querySelector(`.theme-option[data-theme="${savedTheme}"]`);
-        if (themeOption) {
-            themeOption.click();
-        }
-    } else {
-        // Set cyan as default if no saved preference
-        const cyanOption = document.querySelector('.theme-option[data-theme="cyan"]');
-        if (cyanOption) {
-            cyanOption.click();
-        }
-    }
-    
-    // Rest of the code remains unchanged
     // Elementos do DOM
     const wordDisplay = document.getElementById('word-display');
     const wordInput = document.getElementById('word-input');
@@ -53,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.getElementById('start-btn');
     const pauseBtn = document.getElementById('pause-btn');
     const desistirBtn = document.getElementById('desistir-btn');
+    const salvarBtn = document.getElementById('salvar-btn');
     
     // Novos elementos para o progresso
     const progressBar = document.getElementById('progress-bar');
@@ -151,9 +107,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     //Desistir do jogo
-    desistirBtn.addEventListener("click", () => {
-        console.log("Ola")
-    })
+    function desistirGame () {
+        timeLeft = 1
+    }
     
     
     // Verificar a palavra digitada
@@ -234,6 +190,10 @@ document.addEventListener('DOMContentLoaded', () => {
     startBtn.addEventListener('click', init);
     
     pauseBtn.addEventListener('click', togglePause);
+
+    desistirBtn.addEventListener('click', desistirGame);
+
+    salvarBtn.addEventListener('click', salvarProgresso);
     
     wordInput.addEventListener('input', () => {
         if (isPlaying && !isPaused) {
@@ -241,6 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
+    //
+    // window.addEventListener('beforeunload', function (e) {
+    //     e.preventDefault(); // Requerido para funcionar no Chrome
+    //     e.returnValue = ''; // Isso aciona o alerta padrão do navegador
+    // });
 
 
     async function salvarProgresso() {
