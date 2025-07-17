@@ -193,7 +193,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     desistirBtn.addEventListener('click', desistirGame);
 
-    salvarBtn.addEventListener('click', salvarProgresso);
+    salvarBtn.addEventListener('click', () => {
+        if (level > 2) {
+            salvarProgresso()
+        }
+    });
     
     wordInput.addEventListener('input', () => {
         if (isPlaying && !isPaused) {

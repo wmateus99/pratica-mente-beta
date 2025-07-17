@@ -274,4 +274,16 @@ export const cardsProntos = [
             link: './excel-avancado/13.html'
         })
     },
+
+    //Textos
+    {
+        container: '.textos',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 01',
+            descricao: '',
+            imagem: '/public/img/cards/excel.png',
+            link: './textos/01.html'
+        })
+    },
 ];

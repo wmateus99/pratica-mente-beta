@@ -360,38 +360,49 @@ label {
   color: #ccc;
 }
 
-.card-digitacao {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: brown;
+.game-title {
+  text-align: center;
 }
-.card-digitacao .game-info {
-  width: 80%;
+
+.card-digitacao {
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 0.2fr;
+}
+.card-digitacao .box-game {
+  padding: 20px;
+  border-radius: 8px;
+  background: #20778d;
+}
+.card-digitacao .box-game .game-info {
   padding: 20px;
   display: flex;
+  color: #fff;
+  font-size: 20px;
   flex-wrap: wrap;
-  background-color: aqua;
+  align-items: center;
   justify-content: space-evenly;
 }
-.card-digitacao .game-area {
-  width: 80%;
+.card-digitacao .box-game .game-info #time {
+  font-size: 42px;
+}
+.card-digitacao .box-game .game-area {
+  width: 100%;
   display: flex;
   gap: 20px;
   align-items: center;
   flex-direction: column;
-  background-color: aqua;
 }
-.card-digitacao .game-area .word-display {
+.card-digitacao .box-game .game-area .word-display {
   width: 100%;
+  color: #fff;
   padding: 15px;
   font-size: 32px;
   font-weight: bold;
   text-align: center;
-  background-color: blueviolet;
 }
-.card-digitacao .game-area .word-input {
+.card-digitacao .box-game .game-area .word-input {
   width: 100%;
   padding: 10px;
   font-size: 28px;
@@ -399,10 +410,28 @@ label {
   border-radius: 20px;
   background: #fff;
 }
-.card-digitacao .controls {
-  padding: 15px;
+.card-digitacao .box-game .progress-container {
   width: 100%;
+  height: 10px;
+  border-radius: 30px;
+  background: #fff;
+}
+.card-digitacao .box-game .progress-container .progress-bar {
+  height: 10px;
+  border-radius: 30px;
+  background: cyan;
+}
+.card-digitacao .box-game .progress-text {
+  padding: 5px 0px 20px 0px;
+  color: #fff;
+  font-size: 16px;
+}
+.card-digitacao .controls {
+  background: #20778d;
+  padding: 15px;
+  border-radius: 8px;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 

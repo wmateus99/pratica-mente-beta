@@ -15,7 +15,7 @@
     <nav class="nav-menu"></nav>
 
     <div class="ranking">
-        <div class="stock-ticker" title="Rank dos melhores na digitação!" onclick="window.location ='https://google.com.br'">
+        <div class="stock-ticker" title="Rank dos melhores na digitação!" onclick="window.location ='./historico.html'">
             <div class="rank">
                 <div>
                     <span class="r1">1. </span>
@@ -52,31 +52,33 @@
         <h1 class="game-title">Jogo de Digitação</h1>
         
         <div class="card-digitacao">
-            <div class="game-info">
-                <div class="info-item">
-                    <span>Nível:</span>
-                    <span id="level">1</span>
+            <div class="box-game">
+                <div class="game-info">
+                    <div class="info-item">
+                        <span>Nível:</span>
+                        <span id="level">1</span>
+                    </div>
+                    <div class="info-item">
+                        <span id="time">90</span>s
+                    </div>
+                    <div class="info-item">
+                        <span>Pontuação:</span>
+                        <span id="score">0</span>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <span id="time">90</span>s
+                
+                <!-- Barra de progresso -->
+                <div class="progress-container">
+                    <div id="progress-bar" class="progress-bar"></div>
                 </div>
-                <div class="info-item">
-                    <span>Pontuação:</span>
-                    <span id="score">0</span>
+                <div class="progress-text">
+                    <span id="words-count">0</span>/<span id="words-target">10</span> palavras para o próximo nível
                 </div>
-            </div>
-            
-            <!-- Barra de progresso -->
-            <div class="progress-container">
-                <div id="progress-bar" class="progress-bar"></div>
-            </div>
-            <div class="progress-text">
-                <span id="words-count">0</span>/<span id="words-target">10</span> palavras para o próximo nível
-            </div>
-
-            <div class="game-area">
-                <div id="word-display" class="word-display">Pressione Iniciar</div>
-                <input type="text" id="word-input" class="word-input" autocomplete="off" disabled>
+    
+                <div class="game-area">
+                    <div id="word-display" class="word-display">Pressione Iniciar</div>
+                    <input type="text" id="word-input" class="word-input" autocomplete="off" disabled>
+                </div>
             </div>
 
             <div class="controls">

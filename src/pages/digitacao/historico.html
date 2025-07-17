@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/public/css/main.css">
     <title>praticAmente</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .content-list {
+            min-width: 80%;
+        }
+        .list-item {
+            margin: 10px;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            border: 1px solid;
+        }
         .title {
             text-align: center;
             margin: 5% 0%;
@@ -21,27 +36,30 @@
     </style>
 </head>
 <body>
-
-    <header id="headerMenu"></header>
+    <div class="logo">
+        <img src="/public/img/logo-praticamente.svg" alt="">
+    </div>
+    <div class="nav-menu"></div>
     
     <h1 class="title">Recorde Geral</h1>
 
-    <section class="content-list">
-        <div class="list-item">
-            <h3>Carregando...</h3>
-            <div class="stts">
-                <span>Pontos:</span>
-                <span>Nivel:</span>
+    <div class="container">
+        <section class="content-list">
+            <div class="list-item">
+                <h3>Carregando...</h3>
+                <div class="stts">
+                    <span>Pontos:</span>
+                    <span>Nivel:</span>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 <script type="module" src="/script.js"></script>
-<script src="/js/header-menu.js"></script>
 
 
 <script type="module">
-    // ✅ Importações
+    //Importações
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
     import { getFirestore, collection, doc, getDoc, setDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";

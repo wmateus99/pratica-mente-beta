@@ -1,45 +1,77 @@
+.game-title {
+    text-align: center;
+}
+
 .card-digitacao {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: brown;
-    .game-info {
-        width: 80%;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr .2fr;
+    .box-game {
         padding: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: aqua;
-        justify-content: space-evenly;
-    }
-    .game-area {
-        width: 80%;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        flex-direction: column;
-        background-color: aqua;
-        .word-display {
-            width: 100%;
-            padding: 15px;
-            font-size: 32px;
-            font-weight: bold;
-            text-align: center;
-            background-color: blueviolet;
+        border-radius: 8px;
+        background: #20778d;
+        .game-info {
+            padding: 20px;
+            display: flex;
+            color: #fff;
+            font-size: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            // background-color: aqua;
+            justify-content: space-evenly;
+            #time {
+                font-size: 42px;
+            }
         }
-        .word-input {
+        .game-area {
             width: 100%;
-            padding: 10px;
-            font-size: 28px;
-            text-align: center;
-            border-radius: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-direction: column;
+            // background-color: aqua;
+            .word-display {
+                width: 100%;
+                color: #fff;
+                padding: 15px;
+                font-size: 32px;
+                font-weight: bold;
+                text-align: center;
+                // background-color: blueviolet;
+            }
+            .word-input {
+                width: 100%;
+                padding: 10px;
+                font-size: 28px;
+                text-align: center;
+                border-radius: 20px;
+                background: #fff;
+            }
+        }
+        .progress-container {
+            width: 100%;
+            height: 10px;
+            border-radius: 30px;
             background: #fff;
+            .progress-bar {
+                height: 10px;
+                border-radius: 30px;
+                background: cyan;
+            }
+        }
+        .progress-text {
+            padding: 5px 0px 20px 0px;
+            color: #fff;
+            font-size: 16px;
         }
     }
     .controls {
+        background: #20778d;
         padding: 15px;
-        width: 100%;
+        border-radius: 8px;
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
     }
 }
