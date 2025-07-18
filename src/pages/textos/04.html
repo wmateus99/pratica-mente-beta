@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Atividade/Arquivo</title>
+    <link rel="shortcut icon" href="/asstes/_svg/logo_icone_praticamente_white.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="title">Textos para Digitar</h1>
+    </header>
+
+    <div class="conteiner">
+
+        <section class="subs">
+            <h2 class="sub-title">Superando Desafios na Era Moderna</h2>
+            <div class="avisos">
+                <i class="bi bi-exclamation-circle-fill" style="color: red;"></i>
+                <strong>Aviso: </strong>
+                <span>
+                    Caso já tenha feito esse texto, não tem nenhum problema em repetir todo o processo novamente, isso só irá te ajudar a melhorar ainda mais o seu desempenho. Lembre-se, <strong>a repetição e prática, torna você melhor!</strong>
+                </span>
+            </div>
+        </section>
+
+        <div class="split-container">
+            <section class="typing-area">
+                <div class="word-like-editor">
+                    <div class="editor-toolbar">
+                        <div class="toolbar-buttons">
+                            <span class="toolbar-button">Arquivo
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-item" id="save-text">Salvar</div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-item" id="export-text">Exportar</div>
+                                    <div class="dropdown-item" id="import-text">Importar</div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <textarea id="student-input" placeholder="Digite o texto aqui..."></textarea>
+                    <div class="status-bar">
+                        <span id="word-count">0 palavras</span>
+                        <span id="char-count">0 caracteres</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main">
+                <p>
+                    Na trama complexa da vida moderna, a resiliência emerge como uma habilidade crucial para enfrentar desafios e adversidades. Navegando pelos intricados caminhos do século XXI, os indivíduos são constantemente testados, demandando uma resposta resiliente para prosperar.
+                </p>
+                <p>
+                    A revolução digital, apesar de suas inúmeras vantagens, trouxe consigo uma avalanche de mudanças rápidas. A adaptação a novas tecnologias e a constante demanda por aprendizado contínuo tornaram-se características essenciais para sobreviver e prosperar no mundo contemporâneo.
+                </p>
+                <p>
+                    As crises globais, como pandemias e desastres naturais, ressaltam a importância da resiliência em níveis individuais e sociais. Comunidades que conseguem se unir e se adaptar rapidamente muitas vezes emergem mais fortes diante da adversidade, destacando a resiliência como um pilar fundamental da coesão social.
+                </p>
+                <p>
+                    A resiliência emocional, por sua vez, desafia-nos a cultivar uma mentalidade de enfrentamento positiva, permitindo-nos lidar eficazmente com o estresse e as pressões do cotidiano. Essa habilidade torna-se um alicerce crucial para manter o equilíbrio mental em um mundo cada vez mais acelerado e imprevisível.
+                </p>
+                <p>
+                    Em síntese, a arte da resiliência é uma narrativa contínua na jornada humana. À medida que enfrentamos os desafios da era moderna, a resiliência emerge não apenas como uma resposta individual, mas como um fio condutor que conecta as tramas complexas de nossas vidas.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Hidden file input for importing -->
+    <input type="file" id="file-input" style="display: none;" accept=".txt">
+
+    <!-- External script file -->
+    <script src="script.js"></script>
+</body>
+</html>

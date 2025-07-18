@@ -11,16 +11,16 @@ const nomeSemExtensao = nomeArquivo.replace(".html", "");
 document.getElementById("number-atividade").textContent = nomeSemExtensao;
 
 
-// Swal.fire({
-//     icon: 'warning',
-//     title: 'Atenção!',
-//     html: `
-//         Esta atividade foi pensada para você resolver <strong>sozinho</strong>.<br><br>
-//         Enfrentar os desafios por conta própria vai te ajudar a <strong>aprender de verdade</strong>,
-//         desenvolver raciocínio lógico e se tornar mais confiante.<br><br>
-//         Se tiver dúvidas, use o <strong>material didático</strong> ou faça pesquisas.<br><br>
-//         Lembre-se: <em>cada problema resolvido por você é uma conquista!</em>
-//     `,
-//     confirmButtonText: 'Entendi',
-//     confirmButtonColor: '#f39c12'
-// });
+Swal.fire({
+    icon: 'warning',
+    title: 'Atenção!',
+    html: `
+        Esta atividade foi pensada para você resolver <strong>sozinho</strong>.<br><br>
+        Enfrentar os desafios por conta própria vai te ajudar a <strong>aprender de verdade</strong>,
+        desenvolver raciocínio lógico e se tornar mais confiante.<br><br>
+        Se tiver dúvidas, use o <strong>material didático</strong> ou faça pesquisas.<br><br>
+        Lembre-se: <em>cada problema resolvido por você é uma conquista!</em>
+    `,
+    confirmButtonText: 'Entendi',
+    confirmButtonColor: '#f39c12'
+});

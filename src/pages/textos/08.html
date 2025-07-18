@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Atividade/Arquivo</title>
+    <link rel="shortcut icon" href="/asstes/_svg/logo_icone_praticamente_white.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="title">Textos para Digitar</h1>
+    </header>
+
+    <div class="conteiner">
+
+        <section class="subs">
+            <h2 class="sub-title">Além dos Limites Terrestres</h2>
+            <div class="avisos">
+                <i class="bi bi-exclamation-circle-fill" style="color: red;"></i>
+                <strong>Aviso: </strong>
+                <span>
+                    Caso já tenha feito esse texto, não tem nenhum problema em repetir todo o processo novamente, isso só irá te ajudar a melhorar ainda mais o seu desempenho. Lembre-se, <strong>a repetição e prática, torna você melhor!</strong>
+                </span>
+            </div>
+        </section>
+
+        <div class="split-container">
+            <section class="typing-area">
+                <div class="word-like-editor">
+                    <div class="editor-toolbar">
+                        <div class="toolbar-buttons">
+                            <span class="toolbar-button">Arquivo
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-item" id="save-text">Salvar</div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-item" id="export-text">Exportar</div>
+                                    <div class="dropdown-item" id="import-text">Importar</div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <textarea id="student-input" placeholder="Digite o texto aqui..."></textarea>
+                    <div class="status-bar">
+                        <span id="word-count">0 palavras</span>
+                        <span id="char-count">0 caracteres</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main">
+                <p>
+                    A exploração espacial, uma conquista emblemática da humanidade, cativa nossa imaginação desde os primórdios da civilização. Ao longo do último século, testemunhamos feitos notáveis que expandiram nossos horizontes cósmicos e redefiniram nossa compreensão do universo.
+                </p>
+                <p>
+                    A primeira façanha foi a conquista da órbita terrestre, marcada pelo histórico voo de Yuri Gagarin em 1961 e pelos passos da Apollo 11 na Lua em 1969. Esses momentos icônicos não apenas provaram a capacidade tecnológica, mas também simbolizaram o espírito intrépido da exploração.
+                </p>
+                <p>
+                    Desde então, sondas espaciais exploraram planetas distantes, revelando segredos de Marte, Júpiter e além. A exploração robótica tem desempenhado um papel fundamental na expansão de nosso entendimento sobre o sistema solar, inaugurando uma era de descobertas interplanetárias.
+                </p>
+                <p>
+                    No entanto, a exploração espacial não se limita apenas ao nosso sistema solar. Missões como a New Horizons proporcionaram imagens incríveis de Plutão, enquanto telescópios espaciais, como o Hubble, oferecem vislumbres fascinantes de galáxias distantes, estrelas e nebulosas.
+                </p>
+                <p>
+                    A colaboração internacional também se tornou uma característica marcante na exploração espacial contemporânea. A Estação Espacial Internacional (ISS) serve como um laboratório orbital, unindo cientistas e astronautas de várias nações em prol do avanço científico.
+                </p>
+                <p>
+                    No entanto, desafios persistem. A exploração humana de Marte surge como um objetivo ambicioso, enfrentando obstáculos tecnológicos e logísticos. Além disso, questões éticas, como a preservação de ambientes extraterrestres, surgem à medida que consideramos a colonização de outros planetas.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Hidden file input for importing -->
+    <input type="file" id="file-input" style="display: none;" accept=".txt">
+
+    <!-- External script file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Atividade/Arquivo</title>
+    <link rel="shortcut icon" href="/asstes/_svg/logo_icone_praticamente_white.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="title">Textos para Digitar</h1>
+    </header>
+
+    <div class="conteiner">
+
+        <section class="subs">
+            <h2 class="sub-title">Explorando Novos Horizontes na Experiência Humana</h2>
+            <div class="avisos">
+                <i class="bi bi-exclamation-circle-fill" style="color: red;"></i>
+                <strong>Aviso: </strong>
+                <span>
+                    Caso já tenha feito esse texto, não tem nenhum problema em repetir todo o processo novamente, isso só irá te ajudar a melhorar ainda mais o seu desempenho. Lembre-se, <strong>a repetição e prática, torna você melhor!</strong>
+                </span>
+            </div>
+        </section>
+
+        <div class="split-container">
+            <section class="typing-area">
+                <div class="word-like-editor">
+                    <div class="editor-toolbar">
+                        <div class="toolbar-buttons">
+                            <span class="toolbar-button">Arquivo
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-item" id="save-text">Salvar</div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-item" id="export-text">Exportar</div>
+                                    <div class="dropdown-item" id="import-text">Importar</div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <textarea id="student-input" placeholder="Digite o texto aqui..."></textarea>
+                    <div class="status-bar">
+                        <span id="word-count">0 palavras</span>
+                        <span id="char-count">0 caracteres</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main">
+                <p>
+                    Num mundo cada vez mais digital, a realidade virtual (RV) emerge como uma tecnologia que transcende as fronteiras da experiência humana. Ao transportar os indivíduos para ambientes completamente imersivos, a RV está redefinindo a forma como interagimos, aprendemos e nos entretemos.
+                </p>
+                <p>
+                    Na esfera educacional, a RV oferece oportunidades emocionantes para a aprendizagem experiencial. Desde visitar lugares históricos até explorar conceitos complexos em ciências, a tecnologia proporciona uma imersão que vai além dos limites da sala de aula tradicional. No entanto, questões sobre acessibilidade e igualdade de oportunidades educacionais surgem à medida que a tecnologia avança.
+                </p>
+                <p>
+                    Entretenimento e jogos são setores que se beneficiam enormemente da RV. A possibilidade de mergulhar em mundos imaginários e interagir de forma mais imersiva com narrativas tem transformado a indústria do entretenimento. No entanto, equívocos sobre o equilíbrio entre a realidade virtual e o mundo real, especialmente entre os mais jovens, são tópicos de discussão crescentes.
+                </p>
+                <p>
+                    À medida que a realidade virtual continua a evoluir, a sociedade enfrentará desafios significativos, mas também se beneficiará de possibilidades revolucionárias. Navegar por esse território requer uma abordagem ética e cuidadosa, assegurando que essa tecnologia inovadora contribua para uma experiência humana mais enriquecedora e inclusiva.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Hidden file input for importing -->
+    <input type="file" id="file-input" style="display: none;" accept=".txt">
+
+    <!-- External script file -->
+    <script src="script.js"></script>
+</body>
+</html>

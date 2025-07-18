@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Atividade/Arquivo</title>
+    <link rel="shortcut icon" href="/asstes/_svg/logo_icone_praticamente_white.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="title">Textos para Digitar</h1>
+    </header>
+
+    <div class="conteiner">
+
+        <section class="subs">
+            <h2 class="sub-title">Impactos da Internet das Coisas na Vida Cotidiana</h2>
+            <div class="avisos">
+                <i class="bi bi-exclamation-circle-fill" style="color: red;"></i>
+                <strong>Aviso: </strong>
+                <span>
+                    Caso já tenha feito esse texto, não tem nenhum problema em repetir todo o processo novamente, isso só irá te ajudar a melhorar ainda mais o seu desempenho. Lembre-se, <strong>a repetição e prática, torna você melhor!</strong>
+                </span>
+            </div>
+        </section>
+
+        <div class="split-container">
+            <section class="typing-area">
+                <div class="word-like-editor">
+                    <div class="editor-toolbar">
+                        <div class="toolbar-buttons">
+                            <span class="toolbar-button">Arquivo
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-item" id="save-text">Salvar</div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-item" id="export-text">Exportar</div>
+                                    <div class="dropdown-item" id="import-text">Importar</div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <textarea id="student-input" placeholder="Digite o texto aqui..."></textarea>
+                    <div class="status-bar">
+                        <span id="word-count">0 palavras</span>
+                        <span id="char-count">0 caracteres</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main">
+                <p>
+                    Vivemos em uma era onde a conectividade permeia todos os aspectos de nossas vidas, moldando a forma como interagimos com o mundo ao nosso redor. A Internet das Coisas (IoT) emerge como uma força impulsionadora dessa revolução, transformando objetos cotidianos em dispositivos inteligentes interconectados.
+                </p>
+                <p>
+                    No ambiente doméstico, a IoT oferece comodidades inimagináveis uma geração atrás. Desde termostatos inteligentes que aprendem nossas preferências de temperatura até geladeiras que monitoram os níveis de estoque, nossas casas estão se tornando mais inteligentes e eficientes. No entanto, essa comodidade também levanta questões sobre privacidade e segurança cibernética, à medida que mais dispositivos coletam dados sobre nossas vidas diárias.
+                </p>
+                <p>
+                    No setor de saúde, dispositivos IoT estão revolucionando a monitorização e gestão de condições médicas. Desde wearables que rastreiam a atividade física até sensores que monitoram os sinais vitais, a IoT está capacitando as pessoas a assumirem um papel mais ativo em sua saúde. Entretanto, desafios éticos, como o acesso seguro aos dados de saúde, tornam-se cada vez mais prementes.
+                </p>
+                <p>
+                    Em resumo, a era da conectividade, impulsionada pela Internet das Coisas, está moldando profundamente a maneira como vivemos, trabalhamos e nos relacionamos com o ambiente ao nosso redor. Nesse novo mundo interconectado, equilibrar os benefícios da inovação tecnológica com considerações éticas e questões de privacidade torna-se essencial para garantir um futuro sustentável e inclusivo.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Hidden file input for importing -->
+    <input type="file" id="file-input" style="display: none;" accept=".txt">
+
+    <!-- External script file -->
+    <script src="script.js"></script>
+</body>
+</html>

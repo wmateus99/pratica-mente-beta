@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Atividade/Arquivo</title>
+    <link rel="shortcut icon" href="/asstes/_svg/logo_icone_praticamente_white.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="title">Textos para Digitar</h1>
+    </header>
+
+    <div class="conteiner">
+
+        <section class="subs">
+            <h2 class="sub-title">Desafios e Oportunidades para a Sociedade Moderna</h2>
+            <div class="avisos">
+                <i class="bi bi-exclamation-circle-fill" style="color: red;"></i>
+                <strong>Aviso: </strong>
+                <span>
+                    Caso já tenha feito esse texto, não tem nenhum problema em repetir todo o processo novamente, isso só irá te ajudar a melhorar ainda mais o seu desempenho. Lembre-se, <strong>a repetição e prática, torna você melhor!</strong>
+                </span>
+            </div>
+        </section>
+
+        <div class="split-container">
+            <section class="typing-area">
+                <div class="word-like-editor">
+                    <div class="editor-toolbar">
+                        <div class="toolbar-buttons">
+                            <span class="toolbar-button">Arquivo
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-item" id="save-text">Salvar</div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-item" id="export-text">Exportar</div>
+                                    <div class="dropdown-item" id="import-text">Importar</div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <textarea id="student-input" placeholder="Digite o texto aqui..."></textarea>
+                    <div class="status-bar">
+                        <span id="word-count">0 palavras</span>
+                        <span id="char-count">0 caracteres</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main">
+                <p>
+                    No cenário dinâmico da era digital, a inteligência artificial (IA) emerge como uma força transformadora, moldando a maneira como vivemos, trabalhamos e interagimos. Essa revolução tecnológica, impulsionada por algoritmos avançados e aprendizado de máquina, oferece uma gama de desafios e oportunidades que redefinem os limites da sociedade moderna.
+                </p>
+                <p>
+                    Um dos principais impulsionadores da IA é a automação, que promete aumentar a eficiência em várias indústrias. Desde a produção industrial até tarefas administrativas, a substituição de processos manuais por sistemas inteligentes pode liberar recursos e impulsionar a inovação. Contudo, essa automação também levanta preocupações sobre o impacto no emprego e a necessidade de requalificação profissional.
+                </p>
+                <p>
+                    A IA também desempenha um papel fundamental na personalização de serviços e experiências. Recomendações personalizadas em plataformas de streaming, assistentes virtuais e chatbots exemplificam como a tecnologia pode se adaptar às preferências individuais. No entanto, a coleta massiva de dados necessária para alimentar esses sistemas levanta questões sobre privacidade e segurança.
+                </p>
+                <p>
+                    Em síntese, a revolução da inteligência artificial define um novo capítulo na história da sociedade. Navegar por esse território desconhecido exige uma abordagem equilibrada que aproveite as oportunidades enquanto enfrenta os desafios éticos e sociais. O futuro da IA está intrinsecamente ligado à nossa capacidade de moldar e orientar essa tecnologia para beneficiar a humanidade como um todo.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Hidden file input for importing -->
+    <input type="file" id="file-input" style="display: none;" accept=".txt">
+
+    <!-- External script file -->
+    <script src="script.js"></script>
+</body>
+</html>

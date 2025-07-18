@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Página de Atividade/Arquivo</title>
+    <link rel="shortcut icon" href="/asstes/_svg/logo_icone_praticamente_white.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="title">Textos para Digitar</h1>
+    </header>
+
+    <div class="conteiner">
+
+        <section class="subs">
+            <h2 class="sub-title">Lições Aprendidas e Perspectivas Futuras</h2>
+            <div class="avisos">
+                <i class="bi bi-exclamation-circle-fill" style="color: red;"></i>
+                <strong>Aviso: </strong>
+                <span>
+                    Caso já tenha feito esse texto, não tem nenhum problema em repetir todo o processo novamente, isso só irá te ajudar a melhorar ainda mais o seu desempenho. Lembre-se, <strong>a repetição e prática, torna você melhor!</strong>
+                </span>
+            </div>
+        </section>
+
+        <div class="split-container">
+            <section class="typing-area">
+                <div class="word-like-editor">
+                    <div class="editor-toolbar">
+                        <div class="toolbar-buttons">
+                            <span class="toolbar-button">Arquivo
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-item" id="save-text">Salvar</div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-item" id="export-text">Exportar</div>
+                                    <div class="dropdown-item" id="import-text">Importar</div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <textarea id="student-input" placeholder="Digite o texto aqui..."></textarea>
+                    <div class="status-bar">
+                        <span id="word-count">0 palavras</span>
+                        <span id="char-count">0 caracteres</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main">
+                <p>
+                    A pandemia global que assolou o mundo nos últimos anos serviu como um catalisador para mudanças profundas em diversos aspectos da sociedade. Desde a forma como trabalhamos até como nos relacionamos, as lições aprendidas durante esse período desafiador continuam a moldar nossa trajetória coletiva.
+                </p>
+                <p>
+                    No âmbito do trabalho, testemunhamos uma aceleração sem precedentes na adoção de modelos remotos e híbridos. O que antes era considerado uma tendência futura tornou-se rapidamente uma necessidade, revelando tanto desafios quanto oportunidades. A flexibilidade emergiu como um valor fundamental, enquanto questões relacionadas ao equilíbrio entre vida profissional e pessoal ganharam nova urgência.
+                </p>
+                <p>
+                    A tecnologia, por sua vez, demonstrou seu papel crucial como facilitadora da continuidade em tempos de crise. Plataformas digitais que permitiram a manutenção de conexões sociais, educacionais e profissionais tornaram-se essenciais. No entanto, essa dependência tecnológica também expôs disparidades digitais significativas, destacando a necessidade de soluções mais inclusivas.
+                </p>
+                <p>
+                    À medida que enfrentamos os desafios da reconstrução, é fundamental aprender com as experiências da pandemia, abraçar a inovação e cultivar uma mentalidade global. Somente através de uma abordagem coletiva e centrada no ser humano podemos construir um mundo que seja mais preparado, inclusivo e capaz de enfrentar os desafios do futuro.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Hidden file input for importing -->
+    <input type="file" id="file-input" style="display: none;" accept=".txt">
+
+    <!-- External script file -->
+    <script src="script.js"></script>
+</body>
+</html>
