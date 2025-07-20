@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    /* background-color: #f5f5f5; */
+    min-height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url('./background-praticamente.png');
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.level-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.level-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.level-btn:hover {
+    background-color: #d0d0d0;
+}
+
+.level-btn.active {
+    background-color: #00a1a1;
+    color: white;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat span:first-child {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.game-area {
+    margin-bottom: 20px;
+}
+
+.text-display {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    min-height: 90px;
+    font-size: 18px;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.text-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #00a1a1;
+    border-radius: 0 0 8px 8px;
+    outline: none;
+}
+
+.text-input:focus {
+    border-color: #2980b9;
+}
+
+.text-input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00a1a1;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #07b0b0;
+}
+
+.btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.keyboard {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.key:hover {
+    background-color: #d0d0d0;
+}
+
+.key.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.key.space {
+    width: 200px;
+}
+
+.correct {
+    color: #27ae60;
+}
+
+.incorrect {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+.current {
+    background-color: #f1c40f;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .text-display, .text-input {
+        font-size: 16px;
+    }
+    
+    .key {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    
+    .key.space {
+        width: 150px;
+    }
+}
+
+/* Add these styles at the end of your existing CSS file */
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00a1a1;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #27aea7;
+}
+
+.btn-voltar {
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+.btn-voltar img {
+    width: 40px;
+}

@@ -64,7 +64,7 @@
     import { getFirestore, collection, doc, getDoc, setDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
 
-    // 🔐 Configuração
+    //Configuração
     const firebaseConfig = {
         apiKey: "AIzaSyBqrtUfo7aAfySvWPQ8nLqRdH1Dt-yjDlY",
         authDomain: "game-digitacao-4285e.firebaseapp.com",
@@ -75,12 +75,12 @@
         measurementId: "G-QBGVE2H3J8"
     };
 
-    // 🚀 Inicializa Firebase
+    //Inicializa Firebase
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
     const analytics = getAnalytics(app);
 
-    // 🌐 Disponível globalmente
+    //Disponível globalmente
     window.firebaseApp = app;
     window.firebaseDb = db;
     window.firebaseTools = {

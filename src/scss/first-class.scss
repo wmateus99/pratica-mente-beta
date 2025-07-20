@@ -1,0 +1,123 @@
+.body-day1 {
+    color: #e0e0e0;
+    background: #000;
+}
+.body-day1 button {
+    padding: 5px;
+    width: 120px;
+    margin: 10px;
+    color: #e0e0e0;
+    background: #484848;
+}
+.body-day1 .active {
+    color: #ffffff;
+    background: #61929c;
+}
+.content-day1 {
+    gap: 20px;
+    display: flex;
+    padding: 30px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h3 {
+        color: #e0e0e0;
+    }
+    .stats {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .game-area {
+        width: 550px;
+        padding: 15px;
+        user-select: none;
+        min-height: 350px;
+        position: relative;
+        border-radius: 10px;
+        background: #484848;
+        box-shadow: 0px 1px 4px #00000025;
+        .game-display {
+            height: 100%;
+            position: relative;
+            .draggable {
+                cursor: move;
+                display: flex;
+                color: white;
+                user-select: none;
+                position: absolute;
+                border-radius: 8px;
+                align-items: center;
+                justify-content: center;
+                background-color: #00a1a1;
+            }
+            .drop-zone {
+                display: flex;
+                color: #2ecc71;
+                position: absolute;
+                border-radius: 8px;
+                align-items: center;
+                justify-content: center;
+                border: 2px dashed #2ecc71;
+            }
+        }
+    }
+    .game-area.digitacao {
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        span {
+            font-size: 28px;
+        }
+        input {
+            width: 80%;
+            font-size: 24px;
+        }
+        .correct {
+            color: #27ae60;
+        }
+
+        .incorrect {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+    }
+}
+
+.target {
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s;
+    background-color: #e74c3c;
+}
+
+.target:hover {
+    transform: scale(1.05);
+}
+
+
+.home-voltar {
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+}
+
+@media (max-width: 550px) {
+    .content-day1 {
+        display: none;
+    }
+}

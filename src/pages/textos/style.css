@@ -184,7 +184,7 @@ header {
     font-size: 12px;
 }
 
-strong {
+b {
     color: var(--primary-color);
 }
 

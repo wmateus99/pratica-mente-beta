@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>Sistema de Digitação para Iniciantes</title>
+    <link rel="shortcut icon" href="/public/img/logo_icone_praticamente_white.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="body-day1">
+    <div class="home-voltar" onclick="location='/index.html'">
+        <i class="ri-home-2-line"></i>
+    </div>
+    <div class="container">
+        <div class="content-day1">
+
+            <h1>Sistema de Digitação para Iniciantes</h1>
+            
+            <div class="level-selector">
+                <button class="level-btn active" data-level="level1">Nível 1</button>
+                <button class="level-btn" data-level="level2">Nível 2</button>
+                <button class="level-btn" data-level="level3">Nível 3</button>
+                <button class="level-btn" data-level="level4">Nível 4</button>
+                <button class="level-btn" data-level="level5">Nível 5</button>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">
+                    <span>Pontuação:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="stat">
+                    <span>Precisão:</span>
+                    <span id="accuracy">0</span>%
+                </div>
+            </div>
+            
+            <div class="game-area digitacao">
+                <div class="display-info" id="display-info"></div>
+                <div id="text-display" class="text-display">
+                    Clique em "Iniciar" para começar a digitar!
+                </div>
+                <input type="text" id="text-input" class="text-input" disabled placeholder="Digite aqui...">
+            </div>
+            
+            <div class="controls">
+                <button id="start-btn" class="btn">Iniciar</button>
+                <button id="reset-btn" class="btn" disabled>Reiniciar</button>
+            </div>
+            
+            <div class="navigation">
+                <a href="mouse-practice.html" class="nav-link">Ir para Prática de Mouse</a>
+            </div>
+        </div>
+        </div>
+    
+    <script src="digitacao-script.js"></script>
+</body>
+</html>

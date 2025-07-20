@@ -1,4 +1,21 @@
-.section-atividade {
-    max-width: 750px;
+.atividade-title {
     margin-bottom: 30px;
+}
+.container.atividade {
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+.section-atividade {
+    // max-width: 750px;
+    width: 70%;
+    .instrucoes p {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 750px) {
+    .section-atividade {
+        width: 80%;
+    }
 }

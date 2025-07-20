@@ -15,10 +15,10 @@ Swal.fire({
     icon: 'warning',
     title: 'Atenção!',
     html: `
-        Esta atividade foi pensada para você resolver <strong>sozinho</strong>.<br><br>
-        Enfrentar os desafios por conta própria vai te ajudar a <strong>aprender de verdade</strong>,
+        Esta atividade foi pensada para você resolver <b>sozinho</b>.<br><br>
+        Enfrentar os desafios por conta própria vai te ajudar a <b>aprender de verdade</b>,
         desenvolver raciocínio lógico e se tornar mais confiante.<br><br>
-        Se tiver dúvidas, use o <strong>material didático</strong> ou faça pesquisas.<br><br>
+        Se tiver dúvidas, use o <b>material didático</b> ou faça pesquisas.<br><br>
         Lembre-se: <em>cada problema resolvido por você é uma conquista!</em>
     `,
     confirmButtonText: 'Entendi',

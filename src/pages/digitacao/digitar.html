@@ -125,6 +125,51 @@
         setDoc,
         getDocs
     };
+    async function listarJogadores() {
+        const db = window.firebaseDb;
+        const { collection, getDocs } = window.firebaseTools;
+
+        const jogadoresCol = collection(db, "jogadores");
+        const snapshot = await getDocs(jogadoresCol);
+
+        const lista = [];
+
+        snapshot.forEach(doc => {
+            const data = doc.data();
+            lista.push({
+                nome: data.nome || "Sem nome",
+                level: data.level || 0,
+                score: data.score || 0
+            });
+        });
+
+        // Ordenar do maior para o menor por score
+        const ordenada = lista.sort((a, b) => b.score - a.score);
+
+        // Armazenar em variáveis separadas
+        const top1 = ordenada[0] || null;
+        const top2 = ordenada[1] || null;
+        const top3 = ordenada[2] || null;
+
+        console.log("Top 1 jogador:", top1);
+        console.log("Top 2 jogador:", top2);
+        console.log("Top 3 jogador:", top3);
+
+        if (top1) {
+            document.getElementById("rank-01").innerHTML = `${top1.nome} - Nível ${top1.level} ⭐`;
+            document.getElementById("rank-001").innerHTML = `${top1.nome} - Nível ${top1.level} ⭐`;
+        }
+        if (top2) {
+            document.getElementById("rank-02").innerHTML = `${top2.nome} - Nível ${top2.level}`;
+            document.getElementById("rank-002").innerHTML = `${top2.nome} - Nível ${top2.level}`;
+        }
+        if (top3) {
+            document.getElementById("rank-03").innerHTML = `${top3.nome} - Nível ${top3.level}`;
+            document.getElementById("rank-003").innerHTML = `${top3.nome} - Nível ${top3.level}`;
+        }
+
+    }
+    listarJogadores();
 </script>
 </body>
 </html>

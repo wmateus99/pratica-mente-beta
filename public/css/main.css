@@ -388,6 +388,7 @@ label {
   font-size: 42px;
 }
 .card-digitacao .box-game .game-area {
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   display: flex;
   gap: 20px;
@@ -409,6 +410,32 @@ label {
   text-align: center;
   border-radius: 20px;
   background: #fff;
+}
+.card-digitacao .box-game .game-area .letter {
+  display: inline-block;
+  transition: 0.3s ease;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+.card-digitacao .box-game .game-area .letter.correct {
+  color: rgb(119, 255, 0);
+  font-weight: bold;
+}
+.card-digitacao .box-game .game-area .letter.correct {
+  color: rgb(119, 255, 0);
+  font-weight: bold;
+}
+.card-digitacao .box-game .game-area .letter.incorrect {
+  color: red;
+  background-color: rgba(244, 67, 54, 0.1);
+  font-weight: bold;
+}
+.card-digitacao .box-game .game-area .level-up {
+  color: rgb(119, 255, 0);
+  animation: pulse 1s infinite;
+}
+.card-digitacao .box-game .game-area .paused {
+  color: rgba(255, 255, 255, 0.5);
 }
 .card-digitacao .box-game .progress-container {
   width: 100%;
@@ -435,9 +462,172 @@ label {
   justify-content: space-evenly;
 }
 
-.section-atividade {
-  max-width: 750px;
+.letter.correct {
+  color: rgb(119, 255, 0);
+  font-weight: bold;
+}
+
+.letter.incorrect {
+  color: red;
+  background-color: rgba(244, 67, 54, 0.1);
+  font-weight: bold;
+}
+
+.level-up {
+  color: rgb(119, 255, 0);
+  animation: pulse 1s infinite;
+}
+
+.paused {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.atividade-title {
   margin-bottom: 30px;
+}
+
+.container.atividade {
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-atividade {
+  width: 70%;
+}
+.section-atividade .instrucoes p {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 750px) {
+  .section-atividade {
+    width: 80%;
+  }
+}
+.body-day1 {
+  color: #e0e0e0;
+  background: #000;
+}
+
+.body-day1 button {
+  padding: 5px;
+  width: 120px;
+  margin: 10px;
+  color: #e0e0e0;
+  background: #484848;
+}
+
+.body-day1 .active {
+  color: #ffffff;
+  background: #61929c;
+}
+
+.content-day1 {
+  gap: 20px;
+  display: flex;
+  padding: 30px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content-day1 h3 {
+  color: #e0e0e0;
+}
+.content-day1 .stats {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.content-day1 .game-area {
+  width: 550px;
+  padding: 15px;
+  user-select: none;
+  min-height: 350px;
+  position: relative;
+  border-radius: 10px;
+  background: #484848;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1450980392);
+}
+.content-day1 .game-area .game-display {
+  height: 100%;
+  position: relative;
+}
+.content-day1 .game-area .game-display .draggable {
+  cursor: move;
+  display: flex;
+  color: white;
+  user-select: none;
+  position: absolute;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a1a1;
+}
+.content-day1 .game-area .game-display .drop-zone {
+  display: flex;
+  color: #2ecc71;
+  position: absolute;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #2ecc71;
+}
+.content-day1 .game-area.digitacao {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-day1 .game-area.digitacao span {
+  font-size: 28px;
+}
+.content-day1 .game-area.digitacao input {
+  width: 80%;
+  font-size: 24px;
+}
+.content-day1 .game-area.digitacao .correct {
+  color: #27ae60;
+}
+.content-day1 .game-area.digitacao .incorrect {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+.target {
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  display: flex;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s;
+  background-color: #e74c3c;
+}
+
+.target:hover {
+  transform: scale(1.05);
+}
+
+.home-voltar {
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+}
+
+@media (max-width: 550px) {
+  .content-day1 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

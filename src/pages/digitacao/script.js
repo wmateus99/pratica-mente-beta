@@ -188,8 +188,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event Listeners
     startBtn.addEventListener('click', init);
+    document.addEventListener('keydown', function(event) {
+        if (event.code === 'Enter' && level <= 1) {
+            event.preventDefault();
+            init();
+        }
+    })
     
     pauseBtn.addEventListener('click', togglePause);
+    document.addEventListener('keydown', function(event) {
+        if (event.code === 'Space') {
+            event.preventDefault();
+            togglePause();
+        }
+    });
 
     desistirBtn.addEventListener('click', desistirGame);
 

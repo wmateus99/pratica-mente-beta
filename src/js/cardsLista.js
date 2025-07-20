@@ -8,7 +8,7 @@ export const cardsProntos = [
             titulo: 'Primeira Aula',
             descricao: 'Todo grande começo começa com o primeiro passo. Aproveite sua primeira aula!',
             imagem: '/public/img/cards/pri-aula.svg',
-            link: 'https://google.com'
+            link: 'src/pages/primeira_aula/mouse-practice.html'
         })
     },
     {
