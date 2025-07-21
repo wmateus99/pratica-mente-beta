@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>...</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>
+    <div class="logo">
+        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
+    </div>
+
+    <nav class="nav-menu"></nav>
+
+    <section class="container atividade">
+    <h1 class="atividade-title">
+        Atividade de Excel Avançado - <span id="number-atividade"></span>
+    </h1>
+
+    <!-- Parte 1: SOMASE e SOMASES -->
+    <section class="section-atividade">
+        <h2>Parte 01:</h2>
+        <div class="instrucoes">
+        <p>1. Em uma nova planilha no Excel, crie a tabela abaixo:</p>
+        </div>
+
+    <div class="table">
+        <table>
+            <thead>
+            <tr>
+                <th>Vendedor</th>
+                <th>Região</th>
+                <th>Valor da Venda</th>
+                <th>Entregue?</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr><td>Lucas Smith</td><td>Norte</td><td>2500</td><td>Sim</td></tr>
+                <tr><td>Anna Müller</td><td>Sul</td><td>1200</td><td>Não</td></tr>
+                <tr><td>Carlos Rivera</td><td>Oeste</td><td>3800</td><td>Sim</td></tr>
+                <tr><td>Emily Johnson</td><td>Leste</td><td>980</td><td>Sim</td></tr>
+                <tr><td>Lucas Smith</td><td>Norte</td><td>4100</td><td>Não</td></tr>
+                <tr><td>Anna Müller</td><td>Sul</td><td>2300</td><td>Sim</td></tr>
+                <tr><td>Hiro Tanaka</td><td>Leste</td><td>3000</td><td>Sim</td></tr>
+                <tr><td>Carlos Rivera</td><td>Oeste</td><td>1750</td><td>Não</td></tr>
+                <tr><td>Matteo Bianchi</td><td>Norte</td><td>2600</td><td>Sim</td></tr>
+                <tr><td>Sofia Petrova</td><td>Sul</td><td>2900</td><td>Sim</td></tr>
+                <tr><td>Emily Johnson</td><td>Leste</td><td>1500</td><td>Não</td></tr>
+                <tr><td>Hiro Tanaka</td><td>Norte</td><td>2200</td><td>Sim</td></tr>
+                <tr><td>Sofia Petrova</td><td>Oeste</td><td>3300</td><td>Não</td></tr>
+                <tr><td>Matteo Bianchi</td><td>Sul</td><td>1100</td><td>Sim</td></tr>
+                <tr><td>Carlos Rivera</td><td>Leste</td><td>4500</td><td>Sim</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+            <tr>
+                    <th>Total de vendas feitas por Carlos Rivera</th>
+                    <th>Total de vendas entregue da região sul</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td></td>
+            </tbody>
+        </table>
+    </div>
+
+
+        <div class="instrucoes">
+        <p>
+            2. Utilize a função <b>=SOMASE()</b> para somar o total de vendas feitas por <b>Carlos Rivera</b>.
+        </p>
+        <p>
+            3. Utilize a função <b>=SOMASES()</b> para somar todas as vendas feitas na <b>região Sul</b> que foram <b>entregues</b>.
+        </p>
+        </div>
+    </section>
+
+    <!-- Parte 2: CONT.SE e CONT.SES -->
+    <section class="section-atividade">
+        <h2>Parte 02:</h2>
+        <div class="instrucoes">
+        <p>1. Em outra planilha, crie a seguinte tabela de presença:</p>
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aluno</th>
+                        <th>Data</th>
+                        <th>Presença</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>João</td><td>01/07/25</td><td>P</td></tr>
+                    <tr><td>Maria</td><td>01/07/25</td><td>F</td></tr>
+                    <tr><td>João</td><td>02/07/25</td><td>F</td></tr>
+                    <tr><td>Maria</td><td>02/07/25</td><td>F</td></tr>
+                    <tr><td>João</td><td>03/07/25</td><td>F</td></tr>
+                    <tr><td>Maria</td><td>03/07/25</td><td>P</td></tr>
+                    <tr><td>João</td><td>04/07/25</td><td>F</td></tr>
+                    <tr><td>Maria</td><td>04/07/25</td><td>F</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Toral de faltas de Maria</th>
+                        <th>Toral de faltas de João</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td></td><td></td>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="instrucoes">
+        <p>
+            2. Use a fórmula <b>=CONT.SE()</b> para contar quantas faltas <b>(F)</b> Maria e João tiveram.
+        </p>
+        </div>
+    </section>
+
+    <!-- Parte 3: MÉDIASE e MÉDIASES -->
+    <section class="section-atividade">
+        <h2>Parte 03:</h2>
+        <div class="instrucoes">
+        <p>1. Em outra planilha, crie a seguinte tabela de alunos:</p>
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Curso</th>
+                    <th>Status</th>
+                    <th>Nota</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr><td>João</td><td>Informática</td><td>Aprovado</td><td>8,0</td></tr>
+                    <tr><td>Maria</td><td>Informática</td><td>Reprovado</td><td>5,0</td></tr>
+                    <tr><td>Ana</td><td>Administração</td><td>Aprovado</td><td>7,5</td></tr>
+                    <tr><td>Pedro</td><td>Informática</td><td>Aprovado</td><td>9,0</td></tr>
+                    <tr><td>Bruna</td><td>Administração</td><td>Reprovado</td><td>4,0</td></tr>
+                    <tr><td>Carlos</td><td>Informática</td><td>Aprovado</td><td>7,0</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Média de Alunos Reprovados</th>
+                        <th>Média dos Alunos Aprovados em Informática</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td></td><td></td>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="instrucoes">
+        <p>
+            2. Use a fórmula <b>=MÉDIASE()</b> para calcular a média das notas dos alunos <b>reprovados</b>.
+        </p>
+        <p>
+            3. Use a fórmula <b>=MÉDIASES()</b> para calcular a média das notas dos alunos do curso de <b>Informática</b> que foram <b>aprovados</b>.
+        </p>
+        </div>
+    </section>
+
+    <!-- Final -->
+    <section class="section-atividade">
+        <h2>Parabéns por concluir todos os desafios!</h2>
+        <p>
+        Se você resolveu tudo sozinho, parabéns pelo ótimo trabalho! Se não conseguiu, não desanime: revise os conteúdos, estude com calma e repita os exercícios até que tudo faça sentido.
+        </p>
+        <p>
+        <i>Se desafie e continue melhorando, não espere a solução cair em suas mãos.</i>
+        </p>
+    </section>
+    </section>
+
+<script type="module" src="/script.js"></script>
+<script src="./atividades.js"></script>
+</body>
+</html>

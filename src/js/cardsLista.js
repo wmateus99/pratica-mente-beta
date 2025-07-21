@@ -49,7 +49,7 @@ export const cardsProntos = [
             titulo: 'Windows',
             descricao: 'Domine o Windows e aumente sua produtividade no dia a dia!',
             imagem: '/public/img/cards/windows.png',
-            link: 'https://google.com'
+            link: '/src/pages/windows.html'
         })
     },
     {
@@ -272,6 +272,28 @@ export const cardsProntos = [
             descricao: 'Solver e Funções Financeiras',
             imagem: '/public/img/cards/excel.png',
             link: './excel-avancado/13.html'
+        })
+    },
+
+    // Atividades de Windows
+    {
+        container: '.atividades-windows',
+        card: criarCard({
+            classAdd: "bg-windows",
+            titulo: 'Atalhos do Teclado',
+            descricao: 'Atividade para treinar atalhos, texto no Word e janelas no Windows no dia a dia.',
+            imagem: '/public/img/cards/windows.png',
+            link: '/src/pages/windows/atividades/01.html'
+        })
+    },
+    {
+        container: '.atividades-windows',
+        card: criarCard({
+            classAdd: "bg-windows",
+            titulo: 'Manipule Pastas',
+            descricao: 'Praticar manipulação de arquivos, download, edição no Bloco de Notas e colagem no Paint.',
+            imagem: '/public/img/cards/windows.png',
+            link: '/src/pages/windows/atividades/02.html'
         })
     },
 

@@ -120,6 +120,10 @@ th {
   background-color: #f0f0f0;
 }
 
+.line-none {
+  border: none;
+}
+
 label {
   display: block;
   font-weight: bold;

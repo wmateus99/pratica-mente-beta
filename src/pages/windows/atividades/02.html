@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>...</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
+    </div>
+
+    <nav class="nav-menu"></nav>
+
+    
+    <section class="container atividade">
+        <h1 class="atividade-title">
+            Atividade de Windows - <span id="number-atividade"></span>
+        </h1>
+
+        <section class="section-atividade">
+            <div class="instrucoes">
+                <p>
+                    1. Antes de iniciar a atividade, crie uma pasta na área de trabalho chamada <b>"Colagem Criativa"</b>. 
+                </p>
+                <p>
+                    2. Dentro dessa pasta, crie duas subpastas chamadas <b>"Imagens"</b> e <b>"Textos"</b>. 
+                </p>
+                <p>
+                    3. Abra o navegador, e pesquise algumas imagens variadas e faça o download delas para a pasta <b>"Imagens"</b> que você criou anteriormente. - Baixe 1 imagem sobre cada tema abaixo:
+                        <li>
+                            <i>
+                                <b>
+                                    Praia Tropical
+                                </b>
+                            </i>
+                        </li>
+                        <li>
+                            <i>
+                                <b>
+                                    Pôr do sol na montanha
+                                </b>
+                            </i>
+                        </li>
+                        <li>
+                            <i>
+                                <b>
+                                    Paisagem urbana noturna
+                                </b>
+                            </i>
+                        </li>
+                        <li>
+                            <i>
+                                <b>
+                                    Flores coloridas
+                                </b>
+                            </i>
+                        </li>
+                        <li>
+                            <i>
+                                <b>
+                                    Animais fofos 
+                                </b>
+                            </i>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    4. Abra o <b>Bloco de Notas</b> e escreva o seguinte poema: 
+                    <br><br>
+                    <i>
+                        Na frente do PC eu fico a pensar,<br>
+                        Com o teclado começo a digitar.<br> 
+                        Faço um site, um jogo ou botão,<br> 
+                        Tudo começa com a imaginação.<br><br>
+                        O HTML é como a estrutura da casa,<br> 
+                        CSS é a pintura que arrasa.<br> 
+                        JavaScript é o que faz se mexer,<br> 
+                        Tipo abrir janela ou fazer chover.<br><br> 
+                        Se o sistema trava, a gente vai lá,<br> 
+                        Procura o erro e tenta arrumar.<br> 
+                        É igual consertar um carro no escuro,<br> 
+                        Mas quando acerta, parece até ouro puro.<br><br> 
+                        Banco de dados é tipo caderno,<br> 
+                        Guarda tudo, do começo ao inverno.<br> 
+                        Nomes, senhas, tudo com cuidado,<br> 
+                        Pra ninguém perder o que foi guardado. 
+                    </i>
+                </p>
+                <p>
+                    5. Salve o arquivo de texto na pasta <b>"Textos"</b> que você criou dentro da pasta <b>"Colagem Criativa"</b>. 
+                </p>
+                <p>
+                    6. Agora abra o <b>Paint</b>.
+                </p>
+                <p>
+                    7. Salve o arquivo com o nome de sua escolha, logo após, use o atalho <b>ALT + F4</b> para fechar o programa.
+                </p>
+                <p>
+                    8. Desenhe a bandeira do Brasil utilizando as formas.
+                </p>
+                <p>
+                    9. Utillize a ferramenta de texto e digite o nome <b>"Brasil"</b>. 
+                </p>
+                <p>
+                    10. Depois de concluir, salve o arquivo final na pasta <b>"Colagem Criativa"</b> na área de trabalho.
+                </p>
+                <p>
+                    11. Por fim, exclua de forma permanente todos os arquivos e pastas do computador.  
+                </p>
+                <p>
+                    12. Chame o seu instrutor para verificar se realmente você excluiu permanentemente os arquivos.
+                </p>
+                <p>
+                    13. Assim o exercício estará concluído.  
+                </p>
+            </div>
+        </section>
+    </section>
+<script type="module" src="/script.js"></script>
+<script>
+    // Pega o caminho do arquivo (ex: /pasta/atividade1.html)
+    const caminho = window.location.pathname;
+
+    // Separa só o nome do arquivo (ex: atividade1.html)
+    const nomeArquivo = caminho.split("/").pop();
+
+    // Remove a extensão .html (fica só "atividade1")
+    const nomeSemExtensao = nomeArquivo.replace(".html", "");
+
+    // Coloca no span com id "number-atividade"
+    document.getElementById("number-atividade").textContent = nomeSemExtensao
+</script>
+</body>
+</html>
