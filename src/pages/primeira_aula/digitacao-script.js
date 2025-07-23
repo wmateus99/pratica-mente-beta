@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "@ # $ % & * ( )",
             "email@exemplo.com.br",
             "Senha: Abc123!@#",
-            "²² ªª ¹¹",
+            "2²² aªª 1¹¹",
             "Telefone: (11) 98765-4321"
         ]
     };
