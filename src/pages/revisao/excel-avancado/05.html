@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>...</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>
+    <div class="logo">
+        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
+    </div>
+
+    <nav class="nav-menu"></nav>
+
+    <section class="container atividade">
+    <h1 class="atividade-title">
+        Atividade de Excel Avançado - <span id="number-atividade"></span>
+    </h1>
+
+    <section class="section-atividade">
+        <h2>Parte 01:</h2>
+        <div class="instrucoes">
+        <p>1. Em uma planilha no Excel, crie a tabela abaixo:</p>
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Sexo</th>
+                        <th>Valor da Compra?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Artur</td><td>12</td><td>M</td><td>15</td></tr>
+                    <tr><td>Cíntia</td><td>26</td><td>F</td><td></td></tr>
+                    <tr><td>Dóris</td><td>59</td><td>F</td><td></td></tr>
+                    <tr><td>Eliane</td><td>39</td><td>F</td><td>45,78</td></tr>
+                    <tr><td>Elis</td><td>19</td><td>F</td><td></td></tr>
+                    <tr><td>Elisangela</td><td>25</td><td>F</td><td>1,99</td></tr>
+                    <tr><td>Roberto</td><td>52</td><td>M</td><td></td></tr>
+                    <tr><td>Paulo</td><td>58</td><td>M</td><td>4,50</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+    <div class="table">
+        <table>
+            <thead>
+            <tr>
+                    <th>Pesquisa sobre os clientes</th>
+                    <th>Resultados</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Quantos Compraram?</td><td></td>
+                <tr><td>Maior Compra por mulheres que iniciam com a letra E?</td><td></td>
+                <tr><td>Quantos não compraram?</td><td></td>
+                <tr><td>Qual a mediana entre as idades?</td><td></td>
+            </tbody>
+        </table>
+    </div>
+
+
+        <div class="instrucoes">
+        <p>
+            2. No primeiro campo, utilize a fórmula <b>=CONT.VALORES()</b>.
+        </p>
+        <p>
+            3. No segundo campo, é bem mais delicado, preste batente atenção na seguinte explicação:
+            <ul>
+                <li>Você deve iniciar a fórmula <b>=MÁXIMOSES()</b>.</li>
+                <li><i><b>intervalo_máximo:</b></i> Selecione os valores das compras.</li>
+                <li><i><b>intervalo_critérios1:</b></i> Selecione o nome dos clientes.</li>
+                <li><i><b>critério1:</b></i> Utilize <b>"*E"</b> como critério</li>
+                <li><i><b>intervalo_critérios2:</b></i> Selecione o sexo dos clientes.</li>
+                <li><i><b>critério2:</b></i> Utilize <b>"=F"</b> como critério.</li>
+            </ul>
+        </p>
+        <p>
+            4. Para melhor entendimento da estrutura da fórmula MÁXIMOSES, veja como é a sintaxe completa:
+            <ul>
+                <li>
+                    <i><b>=MÁXIMOSES(</b>intervalo_máximo; intervalo_critérios1; critério1; intervalo_critérios2; critério2<b>)</b></i>
+                </li>
+            </ul>
+        </p>
+        <p>
+            5. No terceiro campo, utilize a fórmula <b>=CONTAR.VAZIO()</b>.
+        </p>
+        <p>
+            6. No quarto campo, utilize a fórmula <b>=MED()</b>.
+        </p>
+        </div>
+    </section>
+
+    <section class="section-atividade">
+        <h2>Parabéns por concluir todos os desafios!</h2>
+        <p>
+        Se você resolveu tudo sozinho, parabéns pelo ótimo trabalho! Se não conseguiu, não desanime: revise os conteúdos, estude com calma e repita os exercícios até que tudo faça sentido.
+        </p>
+        <p>
+        <i>Se desafie e continue melhorando, não espere a solução cair em suas mãos.</i>
+        </p>
+    </section>
+    </section>
+
+<script type="module" src="/script.js"></script>
+<script src="./atividades.js"></script>
+</body>
+</html>
