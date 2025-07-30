@@ -13,7 +13,9 @@ $fonte-padrao: "TikTok Sans", sans-serif;
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    // perspective: 1000;
+    // box-sizing: border-box;
+    // transform-style: preserve-3d;
 }
 
 html {
@@ -118,6 +120,16 @@ th {
 }
 .line-none {
     border: none;
+}
+.line-none td {
+    border: none;
+}
+.table {
+    margin: 20px auto;
+}
+.table img {
+    border-radius: 4px;
+    box-shadow: 0 1px 4px #00000025;
 }
 
 // === Forms ===

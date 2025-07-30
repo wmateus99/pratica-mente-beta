@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>...</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>
+    <div class="logo">
+        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
+    </div>
+
+    <nav class="nav-menu"></nav>
+
+    <section class="container atividade">
+        <h1 class="atividade-title">
+            Atividade de Excel Avançado - <span id="number-atividade"></span>
+        </h1>
+
+        <section class="section-atividade">
+            <h2>Parte 01:</h2>
+            <div class="instrucoes">
+                <p>1. Em uma planilha no Excel, crie a tabela abaixo:</p>
+                <div class="table">
+                    <img src="/public/img/tables/att07_table01.webp" alt="Tabela da atividade Parte 1">
+                </div>
+                <p>
+                    2. Para resolver as colunas <b>F</b> e <b>H</b>, você deve levar em consideração os seguintes cálculos:
+                    <ul>
+                        <li>
+                            <b>Coluna F:</b> Quantidade * Custo
+                        </li>
+                        <li>
+                            <b>Coluna H:</b> (Varejo / Custo) - 1
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    3. Na célula <b>C11</b>, utilize uma Validação de Dados do tipo lista tendo como base os dados da coluna <b>Número</b>.
+                </p>
+                <p>
+                    4. Para resolver as células <b>C12</b> à <b>C14</b>, você deve utilizar as fórmulas <b>ÍNDICE</b> e <b>CORRESP</b>.
+                </p>
+                <p>
+                    5. Analise com muita atenção a seguinte estrutura das fórmulas ÍNDICE e CORRESP:
+                    <ul>
+                        <li>
+                            <b>=ÍNDICE(</b>tabela_toda;<b>CORRESP(</b>valor_procurado;lista_de_procurados;0<b>)</b>;numero_da_coluna_procurada<b>)</b>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    6. <a href="https://www.hashtagtreinamentos.com/indice-e-corresp-excel?conversion=base-ex-go-post-novos&gad_source=5&gad_campaignid=22810243158&gclid=EAIaIQobChMI39KR4u_jjgMV0U9IAB0QITZ5EAAYASAAEgId0vD_BwE" target="_blank">Artigo útil sobre as fórmulas ÍNDICE e CORRESP</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="section-atividade">
+            <h2>Parabéns por concluir todos os desafios!</h2>
+            <p>
+            Se você resolveu tudo sozinho, parabéns pelo ótimo trabalho! Se não conseguiu, não desanime: revise os conteúdos, estude com calma e repita os exercícios até que tudo faça sentido.
+            </p>
+            <p>
+            <i>Se desafie e continue melhorando, não espere a solução cair em suas mãos.</i>
+            </p>
+        </section>
+    </section>
+
+<script type="module" src="/script.js"></script>
+<script src="./atividades.js"></script>
+</body>
+</html>

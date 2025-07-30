@@ -16,5 +16,4 @@ window.addEventListener("DOMContentLoaded", () => {
             divDestino.appendChild(card);
         }
     });
-
 })

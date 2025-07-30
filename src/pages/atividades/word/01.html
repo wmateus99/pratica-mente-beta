@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>...</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
+    </div>
+
+    <nav class="nav-menu"></nav>
+
+    
+    <section class="container atividade">
+        <h1 class="atividade-title">
+            Atividade de Windows - <span id="number-atividade"></span>
+        </h1>
+
+        <section class="section-atividade">
+            <div class="instrucoes">
+                <p>
+                    1. Abra o <b>Word</b> e digite o seguinte texto.
+                    <ul>
+                        <li>
+                            <i>
+                                
+                            </i>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    2. Selecione o texto que você digitou (<i>pode ser feito clicando e arrastando o cursor sobre o texto</i>). 
+                </p>
+                <p>
+                    3. Pressione <b>CTRL + C</b> para copiar o texto selecionado 
+                </p>
+                <p>
+                    4. Clique no final do texto e pressione <b>Enter</b> para criar uma nova linha no documento. 
+                </p>
+                <p>
+                    5. Pressione <b>CTRL + V</b> para colar o texto. 
+                </p>
+                <p>
+                    6. Repita o processo de copiar (<b>CTRL + C</b>) e colar (<b>CTRL + V</b>) pelo menos mais duas vezes para que o documento tenha várias cópias do texto original.
+                </p>
+                <p>
+                    7. Salve o arquivo com o nome de sua escolha, logo após, use o atalho <b>ALT + F4</b> para fechar o programa.
+                </p>
+                <p>
+                    8. Crie uma nova <b>Área de Trabalho</b> usando o atalho Windows + TAB. 
+                </p>
+                <p>
+                    9. Nessa nova área, entre no <b>Chrome</b> e pesquise por <b>Tradutor</b>.  
+                </p>
+                <p>
+                    10. Retorne para a primeira Área de Trabalho usando o atalho. 
+                </p>
+                <p>
+                    11. Pressione a tecla Windows (<b>WinKey</b>), procure e abra o programa <b>Bloco de Notas</b>. 
+                </p>
+                <p>
+                    12. Usando o atalho, vá até a segunda Área de Trabalho, e use o tradutor que já está aberto para traduzir as seguintes palavras para o inglês, espanhol e japonês.
+                    <ul>
+                        <li>
+                            <i>
+                                <b>
+                                    Correr, felicidade, estudar, viajar, impressionante. 
+                                </b>
+                            </i>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    13. Agora copie e cole a tradução no <b>Bloco de Notas</b> que está na primeira <b>Área de Trabalho</b>. 
+                </p>
+                <p>
+                    14. Após terminar, salve o arquivo com o nome de sua escolha, depois, use o atalho <b>ALT + F4</b> para fechar o programa.
+                </p>
+            </div>
+        </section>
+    </section>
+<script type="module" src="/script.js"></script>
+<script>
+    // Pega o caminho do arquivo (ex: /pasta/atividade1.html)
+    const caminho = window.location.pathname;
+
+    // Separa só o nome do arquivo (ex: atividade1.html)
+    const nomeArquivo = caminho.split("/").pop();
+
+    // Remove a extensão .html (fica só "atividade1")
+    const nomeSemExtensao = nomeArquivo.replace(".html", "");
+
+    // Coloca no span com id "number-atividade"
+    document.getElementById("number-atividade").textContent = nomeSemExtensao
+</script>
+</body>
+</html>

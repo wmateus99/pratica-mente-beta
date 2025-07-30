@@ -1,0 +1,22 @@
+[
+    {
+        "plataforma": "google",
+        "email-usuario": "escolatsialuno@gmail.com",
+        "senha": "@6421722004"
+    },
+    {
+        "plataforma": "instagram",
+        "email-usuario": "alunos.tsi",
+        "senha": "642172"
+    },
+    {
+        "plataforma": "facebook",
+        "email-usuario": "escolatsialuno@gmail.com",
+        "senha": "642172"
+    },
+    {
+        "plataforma": "twitter",
+        "email-usuario": ["TsiAluno", "escolatsialuno@gmail.com"],
+        "senha": "642172"
+    }
+]

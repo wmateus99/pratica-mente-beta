@@ -69,7 +69,7 @@ export const cardsProntos = [
             titulo: 'Word',
             descricao: 'Crie documentos incríveis com as ferramentas certas do Word!',
             imagem: '/public/img/cards/word.png',
-            link: 'https://google.com'
+            link: '/src/pages/word.html'
         })
     },
     {
@@ -199,7 +199,7 @@ export const cardsProntos = [
         card: criarCard({
             classAdd: "bg-excel",
             titulo: 'Atividade 06',
-            descricao: 'Funções de Data e Hora',
+            descricao: 'Funções de Data',
             imagem: '/public/img/cards/excel.png',
             link: './excel-avancado/06.html'
         })
@@ -209,7 +209,7 @@ export const cardsProntos = [
         card: criarCard({
             classAdd: "bg-excel",
             titulo: 'Atividade 07',
-            descricao: 'Auditoria de Fórmulas, Teste de Hipóteses e Funções de Informações',
+            descricao: 'Funções de Pesquisa e Referência',
             imagem: '/public/img/cards/excel.png',
             link: './excel-avancado/07.html'
         })
@@ -219,16 +219,6 @@ export const cardsProntos = [
         card: criarCard({
             classAdd: "bg-excel",
             titulo: 'Atividade 08',
-            descricao: 'Funções de Pesquisa e Referência',
-            imagem: '/public/img/cards/excel.png',
-            link: './excel-avancado/08.html'
-        })
-    },
-    {
-        container: '.revisao-excel-avancado',
-        card: criarCard({
-            classAdd: "bg-excel",
-            titulo: 'Atividade 09',
             descricao: 'Tabela Dinâmica e Formatação Condicional',
             imagem: '/public/img/cards/excel.png',
             link: './excel-avancado/09.html'
@@ -238,7 +228,7 @@ export const cardsProntos = [
         container: '.revisao-excel-avancado',
         card: criarCard({
             classAdd: "bg-excel",
-            titulo: 'Atividade 10',
+            titulo: 'Atividade 09',
             descricao: 'Gráfico Dinâmico e Classificação de dados',
             imagem: '/public/img/cards/excel.png',
             link: './excel-avancado/10.html'
@@ -248,7 +238,7 @@ export const cardsProntos = [
         container: '.revisao-excel-avancado',
         card: criarCard({
             classAdd: "bg-excel",
-            titulo: 'Atividade 11',
+            titulo: 'Atividade 10',
             descricao: 'Utilizando Formulários',
             imagem: '/public/img/cards/excel.png',
             link: './excel-avancado/11.html'
@@ -258,7 +248,7 @@ export const cardsProntos = [
         container: '.revisao-excel-avancado',
         card: criarCard({
             classAdd: "bg-excel",
-            titulo: 'Atividade 12',
+            titulo: 'Atividade 11',
             descricao: 'Utilizando Macros e Noções de VBA',
             imagem: '/public/img/cards/excel.png',
             link: './excel-avancado/12.html'
@@ -268,7 +258,7 @@ export const cardsProntos = [
         container: '.revisao-excel-avancado',
         card: criarCard({
             classAdd: "bg-excel",
-            titulo: 'Atividade 13',
+            titulo: 'Atividade 12',
             descricao: 'Solver e Funções Financeiras',
             imagem: '/public/img/cards/excel.png',
             link: './excel-avancado/13.html'
@@ -303,9 +293,112 @@ export const cardsProntos = [
         card: criarCard({
             classAdd: "",
             titulo: 'Texto 01',
-            descricao: '',
+            descricao: 'Rumo a um Futuro Sustentável',
             imagem: '/public/img/cards/excel.png',
             link: './textos/01.html'
+        })
+    },
+    {
+        container: '.textos',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 02',
+            descricao: 'Lições Aprendidas e Perspectivas Futuras',
+            imagem: '/public/img/cards/excel.png',
+            link: './textos/02.html'
+        })
+    },
+    {
+        container: '.textos',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 03',
+            descricao: 'Sustentabilidade na Agricultura do Século XXI',
+            imagem: '/public/img/cards/excel.png',
+            link: './textos/03.html'
+        })
+    },
+    {
+        container: '.textos',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 04',
+            descricao: 'Superando Desafios na Era Moderna',
+            imagem: '/public/img/cards/excel.png',
+            link: './textos/04.html'
+        })
+    },
+    {
+        container: '.textos',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 05',
+            descricao: 'Explorando Novos Horizontes na Experiência Humana',
+            imagem: '/public/img/cards/excel.png',
+            link: './textos/05.html'
+        })
+    },
+    {
+        container: '.textos',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 06',
+            descricao: 'A Influência da Cultura Pop na Sociedade Contemporânea',
+            imagem: '/public/img/cards/excel.png',
+            link: './textos/06.html'
+        })
+    },
+    {
+        container: '.textos',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 07',
+            descricao: 'Inovação e Criatividade no Mundo Moderno',
+            imagem: '/public/img/cards/excel.png',
+            link: './textos/07.html'
+        })
+    },
+    {
+        container: '.textos',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 08',
+            descricao: 'Além dos Limites Terrestres',
+            imagem: '/public/img/cards/excel.png',
+            link: './textos/08.html'
+        })
+    },
+    {
+        container: '.textos',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 09',
+            descricao: 'Impactos da Internet das Coisas na Vida Cotidiana',
+            imagem: '/public/img/cards/excel.png',
+            link: './textos/09.html'
+        })
+    },
+    {
+        container: '.textos',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 10',
+            descricao: 'Desafios e Oportunidades para a Sociedade Moderna',
+            imagem: '/public/img/cards/excel.png',
+            link: './textos/10.html'
+        })
+    },
+
+    // Atividade de Word
+
+    {
+        container: '.word',
+        card: criarCard({
+            classAdd: "",
+            titulo: 'Texto 10',
+            descricao: 'Desafios e Oportunidades para a Sociedade Moderna',
+            imagem: '/public/img/cards/word.png',
+            link: './word/10.html'
         })
     },
 ];
