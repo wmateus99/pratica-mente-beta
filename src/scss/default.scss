@@ -13,9 +13,6 @@ $fonte-padrao: "TikTok Sans", sans-serif;
 *::after {
     margin: 0;
     padding: 0;
-    // perspective: 1000;
-    // box-sizing: border-box;
-    // transform-style: preserve-3d;
 }
 
 html {
@@ -141,7 +138,7 @@ label {
 
 // === Utilitários ===
 .container {
-    width: 100%;
+    // width: 100%;
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 $espacamento;

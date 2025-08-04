@@ -136,11 +136,11 @@ export const cardsProntos = [
     {
         container: '.revisao',
         card: criarCard({
-            classAdd: "",
-            titulo: 'Em Breve',
-            descricao: 'Será adicionado mais exercícios em breve!',
-            imagem: '',
-            link: 'https://google.com'
+            classAdd: "bg-powerpoint",
+            titulo: 'PowerPoint',
+            descricao: 'Desenvolva suas habilidades e libere todo o seu potencial criativo!',
+            imagem: '/public/img/cards/powerpoint.png',
+            link: './revisao/powerpoint.html'
         })
     },
     // Cards de Revisão - Excel Avançado
@@ -219,51 +219,25 @@ export const cardsProntos = [
         card: criarCard({
             classAdd: "bg-excel",
             titulo: 'Atividade 08',
-            descricao: 'Tabela Dinâmica e Formatação Condicional',
+            descricao: 'Tabela e Gráfico Dinâmica, Formatação Condicional',
             imagem: '/public/img/cards/excel.png',
-            link: './excel-avancado/09.html'
+            link: './excel-avancado/08.html'
         })
     },
+
+// Cards de Revisão - PowePoint
+
     {
-        container: '.revisao-excel-avancado',
+        container: '.revisao-powerpoint',
         card: criarCard({
-            classAdd: "bg-excel",
-            titulo: 'Atividade 09',
-            descricao: 'Gráfico Dinâmico e Classificação de dados',
-            imagem: '/public/img/cards/excel.png',
-            link: './excel-avancado/10.html'
+            classAdd: "bg-powerpoint",
+            titulo: 'Atividade 01',
+            descricao: 'Criar apresentação no PowerPoint 2019 com mídia, animações e recursos visuais.',
+            imagem: '/public/img/cards/powerpoint.png',
+            link: './powerpoint/01.html'
         })
     },
-    {
-        container: '.revisao-excel-avancado',
-        card: criarCard({
-            classAdd: "bg-excel",
-            titulo: 'Atividade 10',
-            descricao: 'Utilizando Formulários',
-            imagem: '/public/img/cards/excel.png',
-            link: './excel-avancado/11.html'
-        })
-    },
-    {
-        container: '.revisao-excel-avancado',
-        card: criarCard({
-            classAdd: "bg-excel",
-            titulo: 'Atividade 11',
-            descricao: 'Utilizando Macros e Noções de VBA',
-            imagem: '/public/img/cards/excel.png',
-            link: './excel-avancado/12.html'
-        })
-    },
-    {
-        container: '.revisao-excel-avancado',
-        card: criarCard({
-            classAdd: "bg-excel",
-            titulo: 'Atividade 12',
-            descricao: 'Solver e Funções Financeiras',
-            imagem: '/public/img/cards/excel.png',
-            link: './excel-avancado/13.html'
-        })
-    },
+
 
     // Atividades de Windows
     {
@@ -284,6 +258,16 @@ export const cardsProntos = [
             descricao: 'Praticar manipulação de arquivos, download, edição no Bloco de Notas e colagem no Paint.',
             imagem: '/public/img/cards/windows.png',
             link: '/src/pages/windows/atividades/02.html'
+        })
+    },
+    {
+        container: '.atividades-windows',
+        card: criarCard({
+            classAdd: "bg-windows",
+            titulo: 'Manipule Pastas',
+            descricao: 'Praticar manipulação de arquivos, download, edição no Bloco de Notas e colagem no Paint.',
+            imagem: '/public/img/cards/windows.png',
+            link: '/src/pages/windows/atividades/03.html'
         })
     },
 
