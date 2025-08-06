@@ -385,4 +385,97 @@ export const cardsProntos = [
             link: './word/10.html'
         })
     },
+
+    //Arquivos Auxiliares
+
+    {
+        container: '.auxiliares',
+        card: criarCard({
+            classAdd: "bg-windows",
+            titulo: 'Windows',
+            descricao: 'Google Dive',
+            imagem: '/public/img/cards/windows.png',
+            link: 'https://drive.google.com/drive/folders/1auX1teIMz-w93ukfBx3dThOHE0qYT3Jt?usp=sharing'
+        })
+    },
+    {
+        container: '.auxiliares',
+        card: criarCard({
+            classAdd: "bg-internet",
+            titulo: 'Internet',
+            descricao: 'Google Dive',
+            imagem: '/public/img/cards/internet.png',
+            link: 'https://drive.google.com/drive/folders/1V0aVr3A0khKmwG5fzHGb4Vb-qUIKHpPr?usp=sharing'
+        })
+    },
+    {
+        container: '.auxiliares',
+        card: criarCard({
+            classAdd: "bg-excel",
+            titulo: 'Excel',
+            descricao: 'Google Dive',
+            imagem: '/public/img/cards/excel.png',
+            link: 'https://drive.google.com/drive/folders/1VhTV9ai9oc5mEQjhWFdhlYwVIKAHRy2a?usp=sharing'
+        })
+    },
+    {
+        container: '.auxiliares',
+        card: criarCard({
+            classAdd: "bg-word",
+            titulo: 'Word',
+            descricao: 'Google Dive',
+            imagem: '/public/img/cards/word.png',
+            link: 'https://drive.google.com/drive/folders/1orTIIsklzm4lXEiI6DgZE0_YEYfMr6G6?usp=sharing'
+        })
+    },
+    {
+        container: '.auxiliares',
+        card: criarCard({
+            classAdd: "bg-powerpoint",
+            titulo: 'PowerPoint',
+            descricao: 'Google Dive',
+            imagem: '/public/img/cards/powerpoint.png',
+            link: 'https://drive.google.com/drive/folders/13BEqqxiIfrCkJzNqWf70MDSqyICh3Fet?usp=sharing'
+        })
+    },
+    {
+        container: '.auxiliares',
+        card: criarCard({
+            classAdd: "bg-powerbi",
+            titulo: 'PowerBi',
+            descricao: 'Google Dive',
+            imagem: '/public/img/cards/powerbi.png',
+            link: 'https://drive.google.com/drive/folders/1Jf9s7o3x7InDfYEcsx9Z68_bAgLvsZuO?usp=sharing'
+        })
+    },
+    {
+        container: '.auxiliares',
+        card: criarCard({
+            classAdd: "bg-coreldraw",
+            titulo: 'CorelDraw',
+            descricao: 'Google Dive',
+            imagem: '/public/img/cards/coreldraw.png',
+            link: 'https://drive.google.com/drive/folders/1z3SzmQMh_NKoEThs5vq0BOF8JFNOTps0?usp=sharing'
+        })
+    },
+    {
+        container: '.auxiliares',
+        card: criarCard({
+            classAdd: "bg-photoshop",
+            titulo: 'Photoshop',
+            descricao: 'Google Dive',
+            imagem: '/public/img/cards/photoshop.png',
+            link: 'https://drive.google.com/drive/folders/1ddBeXGczle9tA4RXC1eiJL5YNioYmWhu?usp=sharing'
+        })
+    },
+    {
+        container: '.auxiliares',
+        card: criarCard({
+            classAdd: "bg-photoshop",
+            titulo: 'Illustrator',
+            descricao: 'Google Dive',
+            imagem: '/public/img/cards/illustrator.png',
+            link: 'https://drive.google.com/drive/folders/1e7UIPQHMSHAphKXGGtgFTZlM4xwzuEn3?usp=sharing'
+        })
+    },
 ];
