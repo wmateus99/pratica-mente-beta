@@ -1,0 +1,57 @@
+.title-prova {
+    color: #fff;
+}
+.card-question {
+    gap: 20px;
+    width: 80%;
+    display: flex;
+    padding: 20px;
+    margin: 20px auto;
+    user-select: none;
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #289DB925;
+    .box-question {
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 22px;
+        }
+    }
+    .box-alternatives {
+        width: 100%;
+        .alternative {
+            gap: 10px;
+            display: flex;
+            padding: 15px 20px;
+            cursor: pointer;
+            margin: 10px auto;
+            border-radius: 8px;
+            background: #fff;
+            align-items: center;
+            transition: .2s ease-in-out;
+            &:hover {
+                color: #fff;
+                background: #289DB9;
+            }
+            .alt-identifier {
+                padding-right: 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            span {
+                font-size: 17px;
+                line-height: 22px;
+            }
+        }
+        .alternative-active {
+            color: #fff;
+            background: #289DB9;
+            &:hover {
+                background: #289DB9;
+            }
+        }
+    }
+}
