@@ -1,6 +1,26 @@
 .title-prova {
     color: #fff;
 }
+.form-prova {
+    gap: 20px;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    justify-content: space-evenly;
+    .box-input {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        input {
+            width: 350px;
+            outline: none;
+            text-align: center;
+            text-transform: uppercase;
+            border: 1.5px solid #000;
+        }
+    }
+}
 .card-question {
     gap: 20px;
     width: 80%;
@@ -14,6 +34,7 @@
     justify-content: center;
     background: #289DB925;
     .box-question {
+        width: 100%;
         .question {
             font-size: 18px;
             font-weight: bold;

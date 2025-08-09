@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/main.css">
-    <title>...</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <title>Prova de Informática Essencial</title>
+    <!-- CDN SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="logo">
-        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
+        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente" />
     </div>
     <div class="nav-menu">
         <h2 class="title-prova">Prova Final de Informática Essencial</h2>
@@ -16,59 +18,724 @@
 
     <div class="container">
         <section class="content">
-        <div class="card-question" data-question-id="1">
-            <div class="box-question">
-                <span class="question">
-                    1. Para usar variáveis em JavaScript, primeiro precisamos criá-lo, ou seja, declarar uma variável. Para declarar variáveis, usamos uma das palavras-chave
-                </span>
-            </div>
-            <div class="box-alternatives">
-                <div class="alternative alt01" data-alternative="A">
-                    <span class="alt-identifier">[A]</span>
-                    <span>let</span>
+            <form class="form-prova" onsubmit="return false;">
+                <div class="box-input">
+                    <label for="cod">Código de Usuário</label>
+                    <input type="number" name="cod" id="cod" autocomplete="off" />
                 </div>
-                <div class="alternative alt02" data-alternative="correct">
-                    <span class="alt-identifier">[B]</span>
-                    <span>def</span>
+                <div class="box-input">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" autocomplete="off" />
                 </div>
-                <div class="alternative alt03" data-alternative="C">
-                    <span class="alt-identifier">[C]</span>
-                    <span>var</span>
-                </div>
-                <div class="alternative alt04" data-alternative="D">
-                    <span class="alt-identifier">[D]</span>
-                    <span>const</span>
-                </div>
-            </div>
-        </div>
-        <div class="card-question" data-question-id="2">
-            <div class="box-question">
-                <span class="question">
-                    2. Para usar variáveis em JavaScript, primeiro precisamos criá-lo, ou seja, declarar uma variável. Para declarar variáveis, usamos uma das palavras-chave
-                </span>
-            </div>
-            <div class="box-alternatives">
-                <div class="alternative alt01" data-alternative="A">
-                    <span class="alt-identifier">[A]</span>
-                    <span>let</span>
-                </div>
-                <div class="alternative alt02" data-alternative="B">
-                    <span class="alt-identifier">[B]</span>
-                    <span>def</span>
-                </div>
-                <div class="alternative alt03" data-alternative="C">
-                    <span class="alt-identifier">[C]</span>
-                    <span>var</span>
-                </div>
-                <div class="alternative alt04" data-alternative="D">
-                    <span class="alt-identifier">[D]</span>
-                    <span>const</span>
-                </div>
-            </div>
-        </div>
+            </form>
 
+			<div class="card-question" data-question-id="1">
+				<div class="box-question">
+					<span class="question">
+						1. Qual é a principal função do processador em um computador?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Armazenar dados de forma permanente
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Controlar a exibição de vídeo na tela
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							<!-- Correto -->
+							Processar as informações e executar os programas
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Controlar a alimentação elétrica do sistema
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="2">
+				<div class="box-question">
+					<span class="question">
+						2. Qual dispositivo é considerado uma unidade de armazenamento permanente em um computador?  
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Memória RAM
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Processador
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							<!-- Correto -->
+							Disco rígido (HD)
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>Disco Flexível Permanente</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="3">
+				<div class="box-question">
+					<span class="question">
+						3. O que é um software de sistema?  
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Programa que permite a criação de apresentações de slides
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							<!-- Correto -->
+							Conjunto de programas que gerencia o hardware e recursos do sistema
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Aplicativo que cria gráficos e animações
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Software utilizado apenas para editar imagens
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="4">
+				<div class="box-question">
+					<span class="question">
+						4. Qual é a principal diferença entre a memória RAM e o disco rígido (HD)?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							A memória RAM é de armazenamento permanente, enquanto o HD é temporário
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							A memória RAM armazena dados de forma permanente, enquanto o HD armazena dados temporários
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							<!-- Correta -->
+							A memória RAM é volátil, ou seja, perde os dados quando o computador é desligado, enquanto o HD mantém os dados
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							O HD não é necessário para o funcionamento do computador, enquanto a RAM é essencial
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="5">
+				<div class="box-question">
+					<span class="question">
+						5. Qual das alternativas abaixo descreve corretamente o papel da placa mãe em um computador?  
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Controlar a velocidade de processamento do computador
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							<!-- Correto -->
+							Conectar e interligar todos os componentes do computador, como o processador, memória e dispositivos de entrada/saída
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Armazenar o sistema operacional
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Exibir gráficos na tela do monitor
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="6">
+				<div class="box-question">
+					<span class="question">
+						6. Qual dispositivo de entrada permite ao usuário interagir com o computador de forma direta, através de movimento e cliques?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							<!-- Correto -->
+							Mouse
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Monitor
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Impressora
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Teclado
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="7">
+				<div class="box-question">
+					<span class="question">
+						7. Como você pode personalizar o plano de fundo da Área de Trabalho no Windows 10?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Através do menu de configurações da tela de bloqueio.
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Mudando o plano de fundo diretamente pelo Gerenciador de Tarefas
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Alterando no menu de configurações de som.
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							<!-- Correto -->
+							Acessando a opção "Personalizar" clicando com o botão direito na Área de Trabalho.
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="8">
+				<div class="box-question">
+					<span class="question">
+						8. O que a função "Visão de Tarefas" permite fazer no Windows 10?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Abrir e editar tarefas do dia a dia
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							<!-- Correto -->
+							Criar e acessar múltiplas Áreas de Trabalho.
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Modificar as configurações de rede e internet.
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Configurar as preferências de privacidade do usuário.
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="9">
+				<div class="box-question">
+					<span class="question">
+						9. Como você pode organizar seus arquivos no Explorador de Arquivos do Windows 10?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							<!-- Correto -->
+							Utilizando a barra de ferramentas para copiar e mover arquivos entre pastas.
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Por meio do aplicativo de Mídia, como o Reprodutor Multimídia.
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Através das opções de configuração no menu Iniciar.
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Modificando diretamente no painel de controle.
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="10">
+				<div class="box-question">
+					<span class="question">
+						10. O Windows é um hardware que controla todo o sistema do computador.
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Verdadeiro
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							<!-- Correto -->
+							Falso
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="11">
+				<div class="box-question">
+					<span class="question">
+						11. No Windows, como criar uma nova pasta?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Menu Iniciar > Novo > Nova pasta
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Área de Trabalho > Configurações
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Botão esquerdo > Nova pasta
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							<!-- Correto -->
+							Botão direito do Mouse > Novo
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="12">
+				<div class="box-question">
+					<span class="question">
+						12. Qual é a principal função da "Faixa de Opções" no Word?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Inserir gráficos
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Visualizar documentos em diferentes modos de exibição
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Imprimir documentos diretamente do menu
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							<!-- Correto -->
+							Organizar as ferramentas de edição em menus e submenus
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="13">
+				<div class="box-question">
+					<span class="question">
+						13. Em qual guia você encontraria a opção  "Gráfico" no Word?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							<!-- Correto -->
+							Inserir
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Revisão
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Design
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Layout
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="14">
+				<div class="box-question">
+					<span class="question">
+						14. Qual é a vantagem de utilizar os Estilos no Word?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							<!-- Correto -->
+							Aplicar uma formatação consistente e rápida em todo o documento
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Alterar o tamanho das imagens
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Aumentar a velocidade da digitação
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Facilitar a importação
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="15">
+				<div class="box-question">
+					<span class="question">
+						15. O que você deve fazer antes de criar um sumário no Word?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Inserir manualmente o texto do sumário
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							<!-- Correto -->
+							Definir os títulos e subtítulos, usando os Estilos de título
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Criar uma tabela e preencher com os títulos
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Apagar todo o texto e inserir o sumário antes
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="16">
+				<div class="box-question">
+					<span class="question">
+						16. Como você pode modificar a orientação de uma página no Word?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Utilizando a opção “Margens” na guia Layout
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Alterando o tipo de fonte
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							É impossível modificar a orientação de uma página no Word
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							<!-- Correto -->
+							Clicando em "Layout" e escolhendo entre Retrato ou Paisagem
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="card-question" data-question-id="">
+				<div class="box-question">
+					<span class="question"></span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span></span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span></span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span></span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span></span>
+					</div>
+				</div>
+			</div> -->
+			
+            <div class="card-question">
+                <button id="btn-resultado" type="button" disabled>Ver Resultado</button>
+            </div>
         </section>
     </div>
-<script src="/src/js/provas.js"></script>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+    import { getFirestore, collection, doc, getDoc, setDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+
+    // Configuração do Firebase
+    const firebaseConfig = {
+        apiKey: "AIzaSyAAs7eEcbQstmReeMns3xTC531ZxQpXDTk",
+        authDomain: "pratica-mente-e9b23.firebaseapp.com",
+        projectId: "pratica-mente-e9b23",
+        storageBucket: "pratica-mente-e9b23.firebasestorage.app",
+        messagingSenderId: "1028599666989",
+        appId: "1:1028599666989:web:6a3b8c83466c8e50901ba4",
+        measurementId: "G-9R78EX5XSW"
+    };
+
+    // Inicializa Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    getAnalytics(app);
+
+    // Pega gabarito do Firestore
+    const docRef = doc(db, "informatica-essencial", "gabarito");
+    const docSnap = await getDoc(docRef);
+
+    let gabarito = {};
+    if (docSnap.exists()) {
+        gabarito = docSnap.data();
+        console.log("Gabarito carregado:", gabarito);
+    } else {
+        console.error("Gabarito não encontrado no Firestore!");
+    }
+
+    const respostasAluno = {};
+    const totalQuestoes = Object.keys(gabarito).length;
+
+    const btnResultado = document.getElementById("btn-resultado");
+
+    // Criar área de exibição do resultado (não usado aqui porque será no SweetAlert2)
+    // const resultadoEl = document.createElement("div");
+    // resultadoEl.classList.add("resultado");
+    // resultadoEl.style.marginTop = "10px";
+    // document.body.appendChild(resultadoEl);
+
+    function verificarTodasRespondidas() {
+        if (Object.keys(respostasAluno).length === totalQuestoes) {
+            btnResultado.disabled = false;
+        }
+    }
+
+    // Captura cliques nas alternativas
+    document.querySelectorAll('.card-question[data-question-id]').forEach((card) => {
+        const alternatives = card.querySelectorAll('.alternative');
+
+        alternatives.forEach((alt) => {
+            alt.addEventListener('click', () => {
+                alternatives.forEach(a => a.classList.remove('alternative-active'));
+
+                alt.classList.add('alternative-active');
+
+                const questionId = card.dataset.questionId;
+                const selectedAlt = alt.dataset.alternative;
+                respostasAluno[questionId] = selectedAlt;
+
+                verificarTodasRespondidas();
+            });
+        });
+    });
+
+    // Clique no botão → mostra resultado + salva no Firestore (com verificação)
+    btnResultado.addEventListener('click', async () => {
+        const cod = document.getElementById("cod").value.trim();
+        const nome = document.getElementById("nome").value.trim();
+
+        if (!cod || !nome) {
+            await Swal.fire({
+                icon: 'warning',
+                title: 'Campos faltando',
+                text: 'Por favor, preencha o código e o nome antes de ver o resultado.'
+            });
+            return;
+        }
+
+        const alunoRef = doc(db, "nota-de-alunos", cod);
+        const alunoSnap = await getDoc(alunoRef);
+
+        if (alunoSnap.exists()) {
+            await Swal.fire({
+                icon: 'info',
+                title: 'Teste já realizado',
+                text: 'Você já realizou este teste. Somente o professor Mateus pode liberar uma nova tentativa, e isso depende da solicitação de outro professor. No entanto, a liberação não será imediata.'
+            });
+            return;
+        }
+
+        let acertos = 0;
+
+        document.querySelectorAll('.card-question[data-question-id]').forEach((card) => {
+            const questionId = card.dataset.questionId;
+            const alternativas = card.querySelectorAll('.alternative');
+
+            alternativas.forEach((alt) => {
+                const altId = alt.dataset.alternative;
+
+                if (altId === gabarito[questionId]) {
+                    alt.style.backgroundColor = "#4CAF50";
+                    alt.style.color = "#fff";
+                } else if (respostasAluno[questionId] === altId && altId !== gabarito[questionId]) {
+                    alt.style.backgroundColor = "#f44336";
+                    alt.style.color = "#fff";
+                } else {
+                    alt.style.backgroundColor = "";
+                    alt.style.color = "";
+                }
+            });
+
+            if (respostasAluno[questionId] === gabarito[questionId]) {
+                acertos++;
+            }
+        });
+
+        const percentual = (acertos / totalQuestoes) * 100;
+        let mensagem = "";
+
+        if (percentual >= 50) {
+            mensagem = `Parabéns, ${nome}! Você acertou ${acertos} de ${totalQuestoes} questões (${percentual.toFixed(2)}%). Continue assim! 🎉`;
+        } else {
+            mensagem = `Não desanime, ${nome}. Você acertou ${acertos} de ${totalQuestoes} questões (${percentual.toFixed(2)}%). Estude um pouco mais e você vai melhorar! 💪`;
+        }
+
+        await Swal.fire({
+            icon: percentual >= 50 ? 'success' : 'warning',
+            title: 'Resultado da Prova',
+            text: mensagem
+        });
+
+        try {
+            await setDoc(alunoRef, {
+                nome: nome,
+                nota: percentual.toFixed(2),
+                acertos: acertos
+            });
+            console.log("Nota salva com sucesso!");
+        } catch (error) {
+            console.error("Erro ao salvar nota:", error);
+        }
+    });
+</script>
 </body>
 </html>

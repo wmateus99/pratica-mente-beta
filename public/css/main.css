@@ -660,6 +660,27 @@ label {
   color: #fff;
 }
 
+.form-prova {
+  gap: 20px;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin: 5% auto;
+  justify-content: space-evenly;
+}
+.form-prova .box-input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form-prova .box-input input {
+  width: 350px;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1.5px solid #000;
+}
+
 .card-question {
   gap: 20px;
   width: 80%;
@@ -672,6 +693,9 @@ label {
   flex-direction: column;
   justify-content: center;
   background: rgba(40, 157, 185, 0.1450980392);
+}
+.card-question .box-question {
+  width: 100%;
 }
 .card-question .box-question .question {
   font-size: 18px;
