@@ -244,7 +244,7 @@ export const cardsProntos = [
             titulo: 'Atividade 02',
             descricao: 'Criar apresentação no PowerPoint 2019 com mídia, animações e recursos visuais.',
             imagem: '/public/img/cards/powerpoint.png',
-            link: './powerpoint/03.html'
+            link: './powerpoint/02.html'
         })
     },
 
