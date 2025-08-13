@@ -237,6 +237,16 @@ export const cardsProntos = [
             link: './powerpoint/01.html'
         })
     },
+    {
+        container: '.revisao-powerpoint',
+        card: criarCard({
+            classAdd: "bg-powerpoint",
+            titulo: 'Atividade 02',
+            descricao: 'Criar apresentação no PowerPoint 2019 com mídia, animações e recursos visuais.',
+            imagem: '/public/img/cards/powerpoint.png',
+            link: './powerpoint/03.html'
+        })
+    },
 
 
     // Atividades de Windows
