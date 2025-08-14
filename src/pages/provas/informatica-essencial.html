@@ -631,6 +631,11 @@
     // resultadoEl.style.marginTop = "10px";
     // document.body.appendChild(resultadoEl);
 
+    window.addEventListener("beforeunload", function (event) {
+        event.preventDefault(); // Necessário em alguns navegadores
+        event.returnValue = ""; // Necessário para acionar o aviso
+    });
+
     function verificarTodasRespondidas() {
         if (Object.keys(respostasAluno).length === totalQuestoes) {
             btnResultado.disabled = false;
