@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ranking Global - Informática Essencial</title>
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #289DB9;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+		.nome-rank {
+			text-transform: uppercase;
+		}
+    </style>
+</head>
+<body>
+    <h1>Ranking da Prova de Informática Essencial</h1>
+    <table id="ranking-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Acertos</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Ranking será inserido aqui -->
+        </tbody>
+    </table>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+
+    // Configuração do Firebase
+    const firebaseConfig = {
+        apiKey: "AIzaSyAAs7eEcbQstmReeMns3xTC531ZxQpXDTk",
+        authDomain: "pratica-mente-e9b23.firebaseapp.com",
+        projectId: "pratica-mente-e9b23",
+        storageBucket: "pratica-mente-e9b23.firebasestorage.app",
+        messagingSenderId: "1028599666989",
+        appId: "1:1028599666989:web:6a3b8c83466c8e50901ba4",
+        measurementId: "G-9R78EX5XSW"
+    };
+
+    // Inicializa Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Função para carregar o ranking
+    async function carregarRanking() {
+        const querySnapshot = await getDocs(collection(db, "nota-de-alunos"));
+        let alunos = [];
+
+        querySnapshot.forEach((doc) => {
+            alunos.push(doc.data());
+        });
+
+        // Ordena pelo número de acertos (decrescente)
+        alunos.sort((a, b) => b.acertos - a.acertos);
+
+        const tabela = document.querySelector("#ranking-table tbody");
+        tabela.innerHTML = "";
+
+        alunos.forEach((aluno, index) => {
+            const row = `
+                <tr>
+                    <td>${index + 1}</td>
+                    <td class="nome-rank">${aluno.nome}</td>
+                    <td>${aluno.acertos}</td>
+                    <td>${aluno.nota}%</td>
+                </tr>
+            `;
+            tabela.innerHTML += row;
+        });
+    }
+
+    carregarRanking();
+</script>
+</body>
+</html>

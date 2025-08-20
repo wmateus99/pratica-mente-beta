@@ -11,6 +11,10 @@
     --dropdown-hover: #e0e0e0;
 }
 
+.main {
+    user-select: none;
+}
+
 body {
     background-color: var(--dark-bg);
     color: var(--text-color);

@@ -46,82 +46,82 @@ export const cardsProntos = [
         container: '.atividades',
         card: criarCard({
             classAdd: "bg-windows",
-            titulo: 'Windows',
-            descricao: 'Domine o Windows e aumente sua produtividade no dia a dia!',
-            imagem: '/public/img/cards/windows.png',
-            link: '/src/pages/windows.html'
+            titulo: 'Acesse esse link por enquanto',
+            descricao: 'Versão anterior! Logo todas as atividades estarão aqui.',
+            imagem: '',
+            link: 'https://pratica-mente-v5.netlify.app/pages/atividades'
         })
     },
-    {
-        container: '.atividades',
-        card: criarCard({
-            classAdd: "bg-internet",
-            titulo: 'Internet',
-            descricao: 'Explore a internet com segurança e consciência digital.',
-            imagem: '/public/img/cards/internet.png',
-            link: 'https://google.com'
-        })
-    },
-    {
-        container: '.atividades',
-        card: criarCard({
-            classAdd: "bg-word",
-            titulo: 'Word',
-            descricao: 'Crie documentos incríveis com as ferramentas certas do Word!',
-            imagem: '/public/img/cards/word.png',
-            link: '/src/pages/word.html'
-        })
-    },
-    {
-        container: '.atividades',
-        card: criarCard({
-            classAdd: "bg-excel",
-            titulo: 'Excel',
-            descricao: 'Transforme dados em decisões com fórmulas e gráficos no Excel!',
-            imagem: '/public/img/cards/excel.png',
-            link: 'https://google.com'
-        })
-    },
-    {
-        container: '.atividades',
-        card: criarCard({
-            classAdd: "bg-powerpoint",
-            titulo: 'PowerPoint',
-            descricao: 'Encante sua audiência com apresentações poderosas!',
-            imagem: '/public/img/cards/powerpoint.png',
-            link: 'https://google.com'
-        })
-    },
-    {
-        container: '.atividades',
-        card: criarCard({
-            classAdd: "bg-powerbi",
-            titulo: 'PowerBI',
-            descricao: 'Visualize dados com clareza e tome decisões com Power BI!',
-            imagem: '/public/img/cards/powerbi.png',
-            link: 'https://google.com'
-        })
-    },
-    {
-        container: '.atividades',
-        card: criarCard({
-            classAdd: "bg-photoshop",
-            titulo: 'PhotoShop',
-            descricao: 'Crie imagens incríveis com os recursos avançados do Photoshop!',
-            imagem: '/public/img/cards/photoshop.png',
-            link: 'https://google.com'
-        })
-    },
-    {
-        container: '.atividades',
-        card: criarCard({
-            classAdd: "bg-coreldraw",
-            titulo: 'CorelDraw',
-            descricao: 'Desperte seu lado criativo com designs vetoriais no CorelDRAW!',
-            imagem: '/public/img/cards/coreldraw.png',
-            link: 'https://google.com'
-        })
-    },
+    // {
+    //     container: '.atividades',
+    //     card: criarCard({
+    //         classAdd: "bg-internet",
+    //         titulo: 'Internet',
+    //         descricao: 'Explore a internet com segurança e consciência digital.',
+    //         imagem: '/public/img/cards/internet.png',
+    //         link: 'https://google.com'
+    //     })
+    // },
+    // {
+    //     container: '.atividades',
+    //     card: criarCard({
+    //         classAdd: "bg-word",
+    //         titulo: 'Word',
+    //         descricao: 'Crie documentos incríveis com as ferramentas certas do Word!',
+    //         imagem: '/public/img/cards/word.png',
+    //         link: '/src/pages/word.html'
+    //     })
+    // },
+    // {
+    //     container: '.atividades',
+    //     card: criarCard({
+    //         classAdd: "bg-excel",
+    //         titulo: 'Excel',
+    //         descricao: 'Transforme dados em decisões com fórmulas e gráficos no Excel!',
+    //         imagem: '/public/img/cards/excel.png',
+    //         link: 'https://google.com'
+    //     })
+    // },
+    // {
+    //     container: '.atividades',
+    //     card: criarCard({
+    //         classAdd: "bg-powerpoint",
+    //         titulo: 'PowerPoint',
+    //         descricao: 'Encante sua audiência com apresentações poderosas!',
+    //         imagem: '/public/img/cards/powerpoint.png',
+    //         link: 'https://google.com'
+    //     })
+    // },
+    // {
+    //     container: '.atividades',
+    //     card: criarCard({
+    //         classAdd: "bg-powerbi",
+    //         titulo: 'PowerBI',
+    //         descricao: 'Visualize dados com clareza e tome decisões com Power BI!',
+    //         imagem: '/public/img/cards/powerbi.png',
+    //         link: 'https://google.com'
+    //     })
+    // },
+    // {
+    //     container: '.atividades',
+    //     card: criarCard({
+    //         classAdd: "bg-photoshop",
+    //         titulo: 'PhotoShop',
+    //         descricao: 'Crie imagens incríveis com os recursos avançados do Photoshop!',
+    //         imagem: '/public/img/cards/photoshop.png',
+    //         link: 'https://google.com'
+    //     })
+    // },
+    // {
+    //     container: '.atividades',
+    //     card: criarCard({
+    //         classAdd: "bg-coreldraw",
+    //         titulo: 'CorelDraw',
+    //         descricao: 'Desperte seu lado criativo com designs vetoriais no CorelDRAW!',
+    //         imagem: '/public/img/cards/coreldraw.png',
+    //         link: 'https://google.com'
+    //     })
+    // },
     // Cards de Revisão
     {
         container: '.revisao',
@@ -255,6 +255,16 @@ export const cardsProntos = [
             descricao: 'Criar apresentação no PowerPoint 2019 com mídia, animações e recursos visuais.',
             imagem: '/public/img/cards/powerpoint.png',
             link: './powerpoint/03.html'
+        })
+    },
+    {
+        container: '.revisao-powerpoint',
+        card: criarCard({
+            classAdd: "bg-powerpoint",
+            titulo: 'Atividade 04',
+            descricao: 'Criar apresentação no PowerPoint 2019 com mídia, animações e recursos visuais.',
+            imagem: '/public/img/cards/powerpoint.png',
+            link: './powerpoint/04.html'
         })
     },
 
