@@ -1295,12 +1295,10 @@
         const btnResultado = document.getElementById("btn-resultado");
 
         // Segurança ao fechar/recarregar a página (opcional)
-        /*
         window.addEventListener("beforeunload", function (event) {
             event.preventDefault();
             event.returnValue = "";
         });
-        */
 
         // Bloqueio do menu de contexto
         document.addEventListener("contextmenu", (e) => e.preventDefault());
