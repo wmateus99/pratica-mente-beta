@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>...</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<style>
+    * {
+        user-select: none;
+    }
+</style>
+<body>
+    <div class="logo">
+        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
+    </div>
+
+    <nav class="nav-menu"></nav>
+
+    
+    <section class="container atividade">
+        <h1 class="atividade-title">
+            Atividade de PowerPoint - <span id="number-atividade"></span>
+        </h1>
+
+        <section class="section-atividade">
+            <h2>Objetivo:</h2>
+            <div class="instrucoes">
+                <p>
+                    Criar uma apresentação que conta sobre a Segunda Guerra Mundial.
+                </p>
+            </div>
+            <hr>
+            <br><br>
+        </section>
+
+        <section class="section-atividade">
+            <h2>Início do Projeto:</h2>
+            <div class="instrucoes">
+                <ul>
+                    <li>
+                        Tema: <b>Segunda Guerra Mundial</b>
+                    </li>
+                    <li>
+                        Agora, acesse o pdf abaixo, e com sua criatividade, crie uma apresentação de slide falando sobre a segunda guerra mundial.
+                    </li>
+                    <li>
+                        Siga toda a estrutura do pdf para criar a sua própria apresentação.
+                    </li>
+                    <li>
+                        <a href="./primeira-guerra-mundial.pdf" target="_blank">Apresentação</a> 
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-atividade">
+            <h2>Parabéns por concluir todos os desafios!</h2>
+            <p>
+                Se você resolveu tudo sozinho, parabéns pelo ótimo trabalho! Se não conseguiu, não desanime: revise os conteúdos, estude com calma e repita os exercícios até que tudo faça sentido.
+            </p>
+            <p>
+                <i>Se desafie e continue melhorando, não espere a solução cair em suas mãos.</i>
+            </p>
+        </section>
+    </section>
+<script type="module" src="/script.js"></script>
+<script src="./atividades.js"></script>
+<script>
+    document.addEventListener("contextmenu", (e) => {
+        e.preventDefault()
+    })
+</script>
+</body>
+</html>
