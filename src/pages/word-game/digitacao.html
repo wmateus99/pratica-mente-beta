@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Game</title>
+<link rel="stylesheet" href="./digitacao.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="nav-left">
+        <div class="logo">
+            <a href="#"><img src="/public/img/logo.svg" alt="Logo"></a>
+        </div>
+        <div class="box-btns-niveis">
+            <button class="btn-nivel">Fácil</button>
+            <button class="btn-nivel">Normal</button>
+            <button class="btn-nivel">Hardcore</button>
+        </div>
+    </div>
+    <!-- <div class="box-center"><h1>Word Game</h1></div> -->
+    <div class="nav-rigth">
+        <!-- /src/pages/sobre/sobre.html -->
+        <a href="#"><i class="ri-user-star-line"></i></a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="ranking left">
+        <h2>Top 3</h2>
+        <ul class="ranking-list">
+            <li class="first">
+                <span class="position first">1</span>
+                <span class="name first">-</span>
+                <span class="score first">-</span>
+            </li>
+            <li class="second">
+                <span class="position">2</span>
+                <span class="name">-</span>
+                <span class="score">-</span>
+            </li>
+            <li class="third">
+                <span class="position">3</span>
+                <span class="name">-</span>
+                <span class="score">-</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="box-time">
+            <p>Pontos: <span id="pontos">0</span></p>
+            <p class="info"><span id="tempo">60</span>s</p>
+        </div>
+        <span id="palavra">-</span>
+        <input id="entrada" type="text" placeholder="Digite aqui" autocomplete="off" disabled>
+        <div id="status">Aguardando início...</div>
+        <div class="box-btns">
+            <button id="btnControle" title="Tecla Espaço">Iniciar</button>
+            <button id="btnDesistir">Desistir</button>
+            <button id="btnSalvar">Salvar</button>
+        </div>
+    </div>
+
+    <div class="ranking right">
+        <h2>Geral</h2>
+        <div class="players">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="./digitacao.js"></script>
+</body>
+</html>
