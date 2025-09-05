@@ -35,7 +35,7 @@ let jogoEncerrado = false;
 
 let palavras = wordNormal;
 let nivelAtual = "Normal"; // padrão
-const temposNivel = { "Fácil": 90, "Normal": 60, "Hardcore": 45 };
+const temposNivel = { "Fácil": 90, "Normal": 60, "Hardcore": 50 };
 
 // --- Seleção de elementos ---
 const spanPalavra = document.getElementById("palavra");
