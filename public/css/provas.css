@@ -1,0 +1,116 @@
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+
+
+.content {
+    margin: auto;
+    max-width: 1020px;
+}
+
+
+.title-prova {
+    color: #fff;
+}
+
+.form-prova {
+    gap: 20px;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    justify-content: space-evenly;
+}
+
+.form-prova .box-input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-prova .box-input input {
+    width: 350px;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1.5px solid #000;
+}
+
+.card-question {
+    gap: 20px;
+    width: 80%;
+    display: flex;
+    padding: 20px;
+    margin: 20px auto;
+    user-select: none;
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #289DB925;
+}
+
+.card-question .box-question {
+    width: 100%;
+}
+
+.card-question .box-question .question {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.card-question .box-alternatives {
+    width: 100%;
+}
+
+.card-question .box-alternatives .alternative {
+    gap: 10px;
+    display: flex;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin: 10px auto;
+    border-radius: 8px;
+    background: #fff;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+.card-question .box-alternatives .alternative:hover {
+    color: #fff;
+    background: #289DB9;
+}
+
+.card-question .box-alternatives .alternative .alt-identifier {
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-question .box-alternatives .alternative span {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.card-question .box-alternatives .alternative-active {
+    color: #fff;
+    background: #289DB9;
+}
+
+.card-question .box-alternatives .alternative-active:hover {
+    background: #289DB9;
+}
+
+input {
+    padding: 0 10px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+#btn-resultado {
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background: #175DA3;
+}
