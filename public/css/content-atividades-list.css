@@ -1,0 +1,57 @@
+.content-atividades-list {
+    color: #ffffff;
+}
+
+.content-atividades-list .title {
+    display: flex;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.content-atividades-list .title h1 {
+    font-size: 22px;
+}
+
+
+.content-atividades-list .box-list {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    flex-direction: column;
+}
+.content-atividades-list .box-list .list {
+    gap: 15px;
+    width: 90%;
+    max-width: 950px;
+    display: flex;
+    padding: 15px 20px;
+    border-radius: 8px;
+    align-items: center;
+    background: #175DA3;
+    transition: .2s ease-in-out;
+    border: 1px solid #ffffff;
+    justify-content: space-between;
+}
+.content-atividades-list .box-list .list:hover {
+    cursor: pointer;
+    background: #196dc2;
+}
+
+.content-atividades-list .box-list .list .atividade-link a {
+    font-size: 14px;
+    color: #000000;
+    padding: 7px 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    background: #ffffff;
+    box-shadow: 0 1px 4px #00000025;
+}
+
+@media (max-width: 350px) {
+    .content-atividades-list .box-list .list {
+        flex-wrap: wrap;
+    }
+}

@@ -1,25 +1,11 @@
-import { criarFooter } from "./src/js/footer.js"
-import { criarMenu } from "./src/js/nav-menu.js"
-import { cardsProntos } from './src/js/cardsLista.js';
+import { getFileName } from "./src/js/get-file-name.js";
+import { setFavicon } from "./src/js/set-favicon.js";
+import { navMenu } from "./src/js/nav-menu.js";
+// import { cardAnimation } from "./src/js/card-animation.js";
 
-const favicon = document.createElement('link');
-favicon.rel = "shortcut icon";
-favicon.href = "/public/img/logo_icone_praticamente_white.svg";
-favicon.type = "image/x-icon"
-
-
-
-window.addEventListener("DOMContentLoaded", () => {
-    document.head.appendChild(favicon)
-    document.title = "PraticaMente"
-    criarMenu()
-    criarFooter()
-
-
-    cardsProntos.forEach(({ container, card }) => {
-        const divDestino = document.querySelector(container);
-        if (divDestino) {
-            divDestino.appendChild(card);
-        }
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    document.title = getFileName();
+    setFavicon("/public/img/logo.svg");
+    navMenu()
+    // cardAnimation()
 })

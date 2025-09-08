@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>...</title>
+
+    <!-- Link do RemixIcon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link do StyleSheet - Alerta Personalizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Link do GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <style>
+        .meme {
+            width: 100%;
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #ffffff;
+        }
+        .meme img {
+            max-width: 450px;
+            border-radius: 20px;
+            box-shadow: 20px 20px 20px #000000;
+        }
+        @media (max-width: 550px) {
+            .meme img {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="/public/img/logo.svg" alt="Logo do Site">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="/index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/auxiliares/auxiliares.html">Auxiliares</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#atividades">Atividades</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/textos/textos.html">Textos</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/provas/provas.html">Provas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-rigth">
+            <a href="/src/pages/sobre/sobre.html">
+                <i class="ri-user-star-line"></i>
+            </a>
+        </div>
+    </header>
+    <div class="meme">
+        <img src="https://i.pinimg.com/736x/9f/d1/a4/9fd1a4b7f522e566e095edc1302ee304.jpg" id="meme" alt="">
+        <br> <br>
+        <h1>Área em Desenvolvimento</h1>
+    </div>
+
+<script>
+    const meme = document.getElementById("meme");
+    const original = meme.src;
+    const hover = "https://media1.tenor.com/m/ecChvTj3kXQAAAAC/risada-bigode.gif";
+
+    meme.addEventListener("mouseenter", () => {
+        gsap.to(meme, {
+            duration: 0.1,
+            opacity: 0,
+            onComplete: () => {
+                meme.src = hover;
+                gsap.to(meme, { duration: 0.1, opacity: 1 });
+            }
+        });
+    });
+
+    meme.addEventListener("mouseleave", () => {
+        gsap.to(meme, {
+            duration: 0.1,
+            opacity: 0,
+            onComplete: () => {
+                meme.src = original;
+                gsap.to(meme, { duration: 0.1, opacity: 1 });
+            }
+        });
+    });
+</script>
+</body>
+</html>

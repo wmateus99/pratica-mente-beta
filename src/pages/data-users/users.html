@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>...</title>
+
+    <!-- Link do RemixIcon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link do StyleSheet - Alerta Personalizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Link do GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<style>
+    /* Container */
+    .box {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 30px;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    /* Título */
+    .box h1 {
+        color: #175DA3;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    /* Tabela */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    thead {
+        background-color: #175DA3;
+        color: #ffffff;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+    }
+
+    tbody tr:hover {
+        background-color: #b2ebf2;
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        thead tr {
+            display: none;
+        }
+
+        tbody tr {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        td {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 10px;
+        }
+
+        td::before {
+            content: attr(data-label);
+            font-weight: bold;
+            color: #007c91;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="/public/img/logo.svg" alt="Logo do Site">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="/index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/auxiliares/auxiliares.html">Auxiliares</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#atividades">Atividades</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/textos/textos.html">Textos</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/provas/provas.html">Provas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-rigth">
+            <a href="/src/pages/sobre/sobre.html">
+                <i class="ri-user-star-line"></i>
+            </a>
+        </div>
+    </header>
+    <div class="box">
+        <h1>Logins</h1>
+        <div class="list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rede Social</th>
+                        <th>Email ou Usuário</th>
+                        <th>Senha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Rede Social">Google</td>
+                        <td data-label="Email ou Usuário">escolatsialuno@gmail.com</td>
+                        <td data-label="Senha">@6421722004</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Rede Social">Instagram</td>
+                        <td data-label="Email ou Usuário">alunos.tsi</td>
+                        <td data-label="Senha">642172</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Rede Social">Facebook</td>
+                        <td data-label="Email ou Usuário">escolatsialuno@gmail.com</td>
+                        <td data-label="Senha">642172</td>
+                    </tr>
+                    <tr>
+                        <td>Twitter / X</td>
+                        <td data-label="Email ou Usuário">TsiAluno [ou] escolatsialuno@gmail.com</td>
+                        <td data-label="Senha">6421722004</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

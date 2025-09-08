@@ -7,24 +7,8 @@
       "default",
       {
         "ignore": [
-          "scrollbar-width",
-          "scrollbar-color",
-          "scrollbar-width: thin",
           "user-select"
         ]
-      }
-    ],
-    "disown-opener": "off",
-    "axe/forms": [
-      "default",
-      {
-        "label": "off"
-      }
-    ],
-    "axe/structure": [
-      "default",
-      {
-        "list": "off"
       }
     ]
   }

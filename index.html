@@ -3,161 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/main.css">
+    <script type="module" src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
     <title>...</title>
-    <!-- <link rel="shortcut icon" href="/public/img/logo_icone_praticamente_white.svg" type="image/x-icon"> -->
 
+    <!-- Link do RemixIcon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
-    <script>
-        // Version: 2.0
-        window.Brevo = window.Brevo || [];
-        Brevo.push([
-            "init",
-            {
-            client_key: "6ykrwt4dr9kzwv0peodp9kev"
-            }
-        ]);
-    </script>
+    <!-- Link do StyleSheet - Alerta Personalizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <!-- Link do GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <div class="logo">
-        <img src="/public/img/logo-praticamente.svg" alt="Logo do site Pratica-Mente">
-    </div>
-
-    <nav class="nav-menu"></nav>
-
-    <div class="ranking">
-        <div class="stock-ticker" title="Rank dos melhores na digitação!" onclick="window.location ='/src/pages/digitacao/historico.html'">
-            <div class="rank">
-                <div>
-                    <span class="r1">1. </span>
-                    <span id="rank-01">Carregando...</span>
-                </div>
-                <div>
-                    <span>2. </span>
-                    <span id="rank-02">Carregando...</span>
-                </div>
-                <div>
-                    <span>3. </span>
-                    <span id="rank-03">Carregando...</span>
-                </div>
+    <header>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="/public/img/logo.svg" alt="Logo do Site">
             </div>
-            <div class="rank">
-                <div>
-                    <span class="r1">1. </span>
-                    <span id="rank-001">Carregando...</span>
-                </div>
-                <div>
-                    <span>2. </span>
-                    <span id="rank-002">Carregando...</span>
-                </div>
-                <div>
-                    <span>3. </span>
-                    <span id="rank-003">Carregando...</span>
-                </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="/index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/auxiliares/auxiliares.html">Auxiliares</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#atividades">Atividades</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/textos/textos.html">Textos</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/provas/provas.html">Provas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-rigth">
+            <a href="/src/pages/sobre/sobre.html">
+                <i class="ri-user-star-line"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="content-home">
+        <div class="title">
+            <h1>
+                Bem-vindo (a) ao seu ambiente de prática!
+            </h1>
+            <p>
+                Aqui você encontrará um espaço para praticar e evoluir suas habilidades. Este ambiente foi criado para apoiar seu crescimento de forma prática e eficiente.
+            </p>
+        </div>
+        <div class="cards-assets">
+            <div class="card">
+                <h2>Primeira Aula</h2>
+                <span>
+                    Todo grande começo começa com o primeiro passo. Aproveite sua primeira aula!
+                </span>
+                <a href="/src/pages/primeira-aula/mouse.html">Acessar</a>
+            </div>
+            <div class="card">
+                <h2>Jogo de Digitação</h2>
+                <span>
+                    Desafie seus dedos e turbine sua velocidade no jogo de digitação!
+                </span>
+                <a href="/src/pages/word-game/digitacao.html">Acessar</a>
+            </div>
+            <div class="card">
+                <h2>Auxiliares</h2>
+                <span>
+                    Acesse arquivos auxiliares para reforçar seu aprendizado e prática!
+                </span>
+                <a href="/src/pages/auxiliares/auxiliares.html">Acessar</a>
+            </div>
+            <div class="card">
+                <h2>Plataforma TsiFlix</h2>
+                <span>
+                    Conhecimento na tela, no seu tempo: explore tudo o que a TSIFLIX oferece!
+                </span>
+                <a href="https://escolatsi.com/escolatsi/portal/access">Acessar</a>
             </div>
         </div>
     </div>
-    <div class="container">
-        <section class="content-home">
-            <main class="welcome">
-                <div class="description">
-                    <h2>Bem-vindo (a) ao seu ambiente de prática</h2>
-                    <p>Aqui você encontrará um espaço para praticar e evoluir suas habilidades. Este ambiente foi criado para apoiar seu crescimento de forma prática e eficiente.</p>
+    <div class="content-atividades">
+        <div class="title">
+            <h1>
+                Seu espaço de atividades em informática!
+            </h1>
+            <p>
+                Aqui você encontra desafios práticos para treinar, aprender e evoluir suas habilidades!
+            </p>
+        </div>
+        <div class="cards" id="atividades">
+            <div class="card att">
+                <div class="quantidade">
+                    <span>1</span>
                 </div>
-            </main>
-            <div class="cards card-home"></div>
-        </section>
-        <section class="content-atividades">
-            <br> <br>
-            <h2 class="atividade-title">Atalhos para Atividades - OKk</h2>
-            <div class="cards atividades"></div>
-        </section>
+                <h2>Introdução a Informática</h2>
+                <span>
+                    Conheça os principais conceitos e explore a base para todas as atividades digitais!
+                </span>
+                <a href="/src/pages/atividades/introducao/introducao-informatica.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span>8</span>
+                </div>
+                <h2>Windows</h2>
+                <span>
+                    Pratique comandos e funções que vão facilitar sua rotina no sistema operacional!
+                </span>
+                <a href="/src/pages/atividades/windows/windows.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span>0</span>
+                </div>
+                <h2>Internet</h2>
+                <span>
+                    Exercícios que ajudam a dominar pesquisas, navegação e segurança online!
+                </span>
+                <a href="/src/pages/atividades/internet/internet.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span>3</span>
+                </div>
+                <h2>Word</h2>
+                <span>
+                    Atividades voltadas para edição de textos, formatação e organização de documentos!
+                </span>
+                <a href="/src/pages/atividades/word/word.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span>0</span>
+                </div>
+                <h2>Excel</h2>
+                <span>
+                    Desafios com cálculos, tabelas e gráficos para treinar sua produtividade!
+                </span>
+                <a href="/src/pages/atividades/excel/excel.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span>0</span>
+                </div>
+                <h2>PowerPoint</h2>
+                <span>
+                    Práticas criativas para montar apresentações envolventes e bem estruturadas!
+                </span>
+                <a href="/src/pages/atividades/powerpoint/powerpoint.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span>0</span>
+                </div>
+                <h2>Photoshop</h2>
+                <span>
+                    Atividades para edição, montagem e aperfeiçoamento de imagens digitais!
+                </span>
+                <a href="/src/pages/atividades/photoshop/photoshop.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span>0</span>
+                </div>
+                <h2>CorelDraw</h2>
+                <span>
+                    Exercícios de criação gráfica para explorar formas, cores e composições!
+                </span>
+                <a href="/src/pages/atividades/coreldraw/coreldraw.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span>0</span>
+                </div>
+                <h2>Illustrator</h2>
+                <span>
+                    Pratique com ilustrações vetoriais e desenvolva sua criatividade no design!
+                </span>
+                <a href="/src/pages/atividades/illustrator/illustrator.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span>0</span>
+                </div>
+                <h2>Canva</h2>
+                <span>
+                    Atividades fáceis e rápidas para treinar design e produção de materiais visuais!
+                </span>
+                <a href="/src/pages/atividades/canva/canva.html">Acessar</a>
+            </div>
+        </div>
+    </div>
     </div>
 
-<script type="module" src="/script.js"></script>
-<script type="module">
-    //Importações
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
-    import { getFirestore, collection, doc, getDoc, setDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+    <div class="nada">
+        <a href="/src/pages/data-users/users.html">x</a>
+    </div>
 
-    //Configuração
-    const firebaseConfig = {
-        apiKey: "AIzaSyBqrtUfo7aAfySvWPQ8nLqRdH1Dt-yjDlY",
-        authDomain: "game-digitacao-4285e.firebaseapp.com",
-        projectId: "game-digitacao-4285e",
-        storageBucket: "game-digitacao-4285e.appspot.com",
-        messagingSenderId: "569609192666",
-        appId: "1:569609192666:web:84393a4b4ae0dfea3191e3",
-        measurementId: "G-QBGVE2H3J8"
-    };
+<script>
+    gsap.registerPlugin(ScrollTrigger);
 
-    //Inicializa Firebase
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-    const analytics = getAnalytics(app);
-
-    //Disponível globalmente
-    window.firebaseApp = app;
-    window.firebaseDb = db;
-    window.firebaseTools = {
-        collection,
-        doc,
-        getDoc,
-        setDoc,
-        getDocs
-    };
-
-
-async function listarJogadores() {
-    const db = window.firebaseDb;
-    const { collection, getDocs } = window.firebaseTools;
-
-    const jogadoresCol = collection(db, "jogadores");
-    const snapshot = await getDocs(jogadoresCol);
-
-    const lista = [];
-
-    snapshot.forEach(doc => {
-        const data = doc.data();
-        lista.push({
-            nome: data.nome || "Sem nome",
-            level: data.level || 0,
-            score: data.score || 0
-        });
+    // Entrada
+    gsap.utils.toArray(".card.att").forEach((card, i) => {
+        gsap.fromTo(card, 
+            {
+                opacity: 0,
+                y: 80,
+                scale: 0.5,
+                rotate: gsap.utils.random(-20, 20)
+            },
+            {
+                opacity: 1,
+                y: 0,
+                scale: 0.8,
+                rotate: 0,
+                duration: 0.2,
+                ease: "power3.out",
+                delay: i * 0.01,
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                }
+            }
+        );
     });
 
-    // Ordenar do maior para o menor por score
-    const ordenada = lista.sort((a, b) => b.score - a.score);
+    // Hover criativo
+    gsap.utils.toArray(".card.att").forEach((card) => {
+        let hoverTween;
 
-    // Armazenar em variáveis separadas
-    const top1 = ordenada[0] || null;
-    const top2 = ordenada[1] || null;
-    const top3 = ordenada[2] || null;
+        card.addEventListener("mouseenter", () => {
+            if (hoverTween) hoverTween.kill();
+            hoverTween = gsap.to(card, {
+                scale: 0.9,
+                y: -10,
+                rotate: gsap.utils.random(-5, 5),
+                duration: 0.15,
+                ease: "power2.out",
+                yoyo: true,
+                repeat: 1, // cria efeito de “pop”
+                boxShadow: "0px 25px 50px rgba(0,0,0,0.25)"
+            });
+        });
 
-    console.log("Top 1 jogador:", top1);
-    console.log("Top 2 jogador:", top2);
-    console.log("Top 3 jogador:", top3);
-
-    if (top1) {
-        document.getElementById("rank-01").innerHTML = `${top1.nome} - Nível ${top1.level} ⭐`;
-        document.getElementById("rank-001").innerHTML = `${top1.nome} - Nível ${top1.level} ⭐`;
-    }
-    if (top2) {
-        document.getElementById("rank-02").innerHTML = `${top2.nome} - Nível ${top2.level}`;
-        document.getElementById("rank-002").innerHTML = `${top2.nome} - Nível ${top2.level}`;
-    }
-    if (top3) {
-        document.getElementById("rank-03").innerHTML = `${top3.nome} - Nível ${top3.level}`;
-        document.getElementById("rank-003").innerHTML = `${top3.nome} - Nível ${top3.level}`;
-    }
-
-}
-listarJogadores();
-
+        card.addEventListener("mouseleave", () => {
+            if (hoverTween) hoverTween.kill();
+            gsap.to(card, {
+                scale: 0.8,
+                y: 0,
+                rotate: 0,
+                duration: 0.2,
+                ease: "power3.out",
+                boxShadow: "0px 10px 20px rgba(0,0,0,0.1)"
+            });
+        });
+    });
 </script>
+
 </body>
 </html>
