@@ -8,4 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
     setFavicon("/public/img/logo.svg");
     navMenu()
     // cardAnimation()
+
+    const spanVersion = document.createElement('a');
+    spanVersion.href = "/src/pages/data-users/users.html";
+    spanVersion.className = "version";
+    spanVersion.textContent = "Versão 6.0.0"
+    document.body.appendChild(spanVersion)
 })
