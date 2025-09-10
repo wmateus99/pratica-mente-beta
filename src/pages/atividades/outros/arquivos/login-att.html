@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/src/pages/atividades/atividades.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>...</title>
+
+    <!-- Link do RemixIcon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link do StyleSheet - Alerta Personalizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Link do GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="/public/img/logo.svg" alt="Logo do Site">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="/index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/auxiliares/auxiliares.html">Auxiliares</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#atividades">Atividades</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/textos/textos.html">Textos</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/provas/provas.html">Provas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-rigth">
+            <a href="/src/pages/sobre/sobre.html">
+                <i class="ri-user-star-line"></i>
+            </a>
+        </div>
+    </header>
+<div class="content">
+    <ol>
+        <li>Acesse o site do editor de códigos Visual Studio Code.</li>
+        <li>Baixe e instale o programa no computador.</li>
+        <li>Após a instalação, abra o programa e faça as seguintes configurações:
+            <ul>
+                <li>Mudar Idioma: Use o atalho <strong>CTRL + SHIFT + P</strong>, na caixa de pesquisa que surgir, digite “Display Language” e aperte “Enter”, então basta escolher o idioma português.</li>
+                <li>Instalar Extensão: Na barra de menus ao lado, procure a opção “Extensões” e instale a extensão “Live Server”.</li>
+            </ul>
+        </li>
+        <li>Agora que o programa está configurado, crie uma pasta na “Área de Trabalho” com o nome “Login”.</li>
+        <li>Arraste a pasta para dentro do editor de código.</li>
+        <li>
+            Crie a seguinte estrutura de pastas e arquivos:
+            <br>
+            <ul>
+                <li>Pasta: img</li>
+                <li>Arquivo: index.html</li>
+                <li>Arquivo: style.css</li>
+            </ul>
+        </li>
+        <li>Baixe a imagem e coloque na pasta “img” com o nome “logo”. (<a href="./logo.png" target="_blank">Baixar Imagem</a>)</li>
+        <li>Clique no arquivo “index.html” e digite o seguinte código:</li>
+
+        <p class="codepen" data-height="350" data-default-tab="html" data-slug-hash="raObzYd" data-pen-title="html" data-user="Mateus-Public" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/Mateus-Public/pen/raObzYd">
+        html</a> by Mateus Public (<a href="https://codepen.io/Mateus-Public">@Mateus-Public</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <br>
+
+        <li>Ainda no mesmo documento, digite o seguinte bloco de código:</li>
+
+        <p class="codepen" data-height="500" data-default-tab="html" data-slug-hash="QwjPMrv" data-pen-title="form" data-user="Mateus-Public" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/Mateus-Public/pen/QwjPMrv">
+        form</a> by Mateus Public (<a href="https://codepen.io/Mateus-Public">@Mateus-Public</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <br>
+
+        <li>Explicação das tags usadas no código:
+            <ul>
+                <li><code>&lt;div&gt;</code>: cria divisões ou blocos na página para organizar o layout.</li>
+                <li><code>class="..."</code>: identifica o bloco com um nome para ser estilizado no CSS.</li>
+                <li><code>&lt;img&gt;</code>: insere uma imagem, no caso o logo da escola.</li>
+                <li><code>alt="..."</code>: texto alternativo exibido caso a imagem não carregue.</li>
+                <li><code>&lt;h2&gt;</code>: título de seção, aqui usado para a mensagem “Digite seu usuário e senha”.</li>
+                <li><code>&lt;form&gt;</code>: define um formulário que pode conter campos e botões.</li>
+                <li><code>&lt;input type="text"&gt;</code>: campo de texto para digitar o usuário.</li>
+                <li><code>&lt;input type="password"&gt;</code>: campo para senha, oculta os caracteres digitados.</li>
+                <li><code>placeholder="..."</code>: texto exibido dentro do campo até o usuário digitar algo.</li>
+                <li><code>&lt;button&gt;</code>: cria um botão, neste caso com o texto “Acessar”.</li>
+            </ul>
+        </li>
+        <li>A parte do HTML já está pronta, agora clique com o botão direito do mouse sobre o código e escolha a opção “Open With Live Server”.</li>
+        <li>O navegador irá abrir e mostrar o resultado do código HTML que você digitou. Como pode ver, ele ainda não tem nenhuma aparência, então é hora de deixar com um melhor visual.</li>
+        <li>Acesse o arquivo “style.css” e digite o seguinte código:.</li>
+
+        <p class="codepen" data-height="1370" data-default-tab="css" data-slug-hash="RNWOZeN" data-pen-title="css" data-user="Mateus-Public" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/Mateus-Public/pen/RNWOZeN">
+        css</a> by Mateus Public (<a href="https://codepen.io/Mateus-Public">@Mateus-Public</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+    </ol>
+</div>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+</body>
+</html>
