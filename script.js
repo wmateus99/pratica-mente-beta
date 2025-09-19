@@ -4,6 +4,9 @@ import { navMenu } from "./src/js/nav-menu.js";
 // import { cardAnimation } from "./src/js/card-animation.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    const logo = document.querySelector('.logo');
+
     document.title = getFileName();
     setFavicon("/public/img/logo.svg");
     navMenu()
@@ -14,4 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     spanVersion.className = "version";
     spanVersion.textContent = "Versão 6.1.1"
     document.body.appendChild(spanVersion)
+
+    logo.addEventListener("click", () => {
+        window.location.href = "/index.html";
+    })
 })
