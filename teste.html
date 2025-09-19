@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <style>
+        .calc { width: 220px; margin: 20px auto; }
+        .display { width: 100%; height: 40px; text-align: right; }
+        .buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; }
+        button { height: 40px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <div class="calc">
+        <input type="text" class="display" id="display" disabled>
+        <div class="buttons">
+            <button>7</button><button>8</button><button>9</button><button>/</button>
+            <button>4</button><button>5</button><button>6</button><button>*</button>
+            <button>1</button><button>2</button><button>3</button><button>-</button>
+            <button>0</button><button>C</button><button>=</button><button>+</button>
+        </div>
+    </div>
+
+    <script>
+        const display = document.getElementById('display');
+        const buttons = document.querySelectorAll('button');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const value = btn.textContent;
+                if (value === 'C') {
+                    display.value = '';
+                } else if (value === '=') {
+                    try {
+                        display.value = eval(display.value);
+                    } catch {
+                        display.value = 'Erro';
+                    }
+                } else {
+                    display.value += value;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const spanVersion = document.createElement('a');
     spanVersion.href = "/src/pages/data-users/users.html";
     spanVersion.className = "version";
-    spanVersion.textContent = "Versão 6.0.0"
+    spanVersion.textContent = "Versão 6.1.1"
     document.body.appendChild(spanVersion)
 })

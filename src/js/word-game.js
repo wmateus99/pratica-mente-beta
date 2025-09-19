@@ -228,7 +228,7 @@ function iniciarPartida(){
 // ====================== BOTÕES EXTRAS ====================== //
 // Desistir -> acaba tempo
 btnDesistir.addEventListener("click",()=>{
-    if(emAndamento == false) {
+    if(emAndamento == false && pontos >= 10) {
         spanTempo.innerHTML = "0"
         tempo=1;
         salvarProgresso()
