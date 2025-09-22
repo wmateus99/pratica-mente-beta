@@ -16,26 +16,6 @@
 
     <!-- Link do GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <style>
-        .meme {
-            width: 100%;
-            padding: 5%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #ffffff;
-        }
-        .meme img {
-            max-width: 450px;
-            border-radius: 20px;
-            box-shadow: 20px 20px 20px #000000;
-        }
-        @media (max-width: 550px) {
-            .meme img {
-                max-width: 250px;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -69,37 +49,55 @@
             </a>
         </div>
     </header>
-    <div class="meme">
-        <img src="https://i.pinimg.com/736x/9f/d1/a4/9fd1a4b7f522e566e095edc1302ee304.jpg" id="meme" alt="">
-        <br> <br>
-        <h1>Área em Desenvolvimento</h1>
-    </div>
-
+    <section class="s-container">
+        <div class="sobre">
+            <div class="aba s1">
+                <h1>Sobre o Projeto</h1>
+                <ol>
+                    <li>
+                        Praticar meus conhecimentos em desenvolvimento web com HTML, CSS e JavaScript.
+                    </li>
+                    <li>
+                        Organizar um modelo base para facilitar a criação de novos projetos.
+                    </li>
+                    <li>
+                        Economizar tempo em sala de aula com um sistema que possa ser reutilizado como ferramenta didática.
+                    </li>
+                </ol>
+            </div>
+            <div class="aba s2">
+                <p>
+                    Este site foi idealizado como parte do processo de estudo e prática em Desenvolvimento Web por um professor da área de Informática. Seu desenvolvimento tem como principal objetivo o aperfeiçoamento de habilidades técnicas em criação de sites, design responsivo, organização de conteúdo e experiência do usuário.
+                </p>
+            </div>
+            <div class="aba s3">
+                <p>
+                    Embora voltado principalmente ao aprendizado e prática do desenvolvedor, o site também cumpre uma função prática no ambiente educacional, ao centralizar atividades, desafios e avaliações destinadas aos alunos. Assim, além de ser um exercício constante de desenvolvimento web, torna-se uma ferramenta útil no apoio ao trabalho docente.
+                </p>
+            </div>
+            <div class="aba s4">
+                <p>
+                    O layout e o estilo visual foram definidos com base em decisões pessoais, focando na clareza, simplicidade e funcionalidade. Por essa razão, não seguem a identidade visual da instituição de ensino na qual o autor atua, mantendo-se como um projeto independente com fins educativos e experimentais.
+                </p>
+            </div>
+        </div>
+    </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script>
-    const meme = document.getElementById("meme");
-    const original = meme.src;
-    const hover = "https://media1.tenor.com/m/ecChvTj3kXQAAAAC/risada-bigode.gif";
+    gsap.registerPlugin(ScrollTrigger);
 
-    meme.addEventListener("mouseenter", () => {
-        gsap.to(meme, {
-            duration: 0.1,
-            opacity: 0,
-            onComplete: () => {
-                meme.src = hover;
-                gsap.to(meme, { duration: 0.1, opacity: 1 });
-            }
-        });
-    });
+    const sections = gsap.utils.toArray('.sobre > div');
 
-    meme.addEventListener("mouseleave", () => {
-        gsap.to(meme, {
-            duration: 0.1,
-            opacity: 0,
-            onComplete: () => {
-                meme.src = original;
-                gsap.to(meme, { duration: 0.1, opacity: 1 });
-            }
-        });
+    gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+        trigger: '.sobre',
+        pin: true,
+        scrub: 1,
+        end: () => "+=" + document.querySelector('.sobre').scrollWidth
+        }
     });
 </script>
 </body>

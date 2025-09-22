@@ -4,6 +4,7 @@
 @import url('/public//css/content-home.css');
 @import url('/public//css/content-atividades.css');
 @import url('/public//css/content-atividades-list.css');
+@import url('/public//css/sobre.css');
 
 html {
     scroll-behavior: smooth;

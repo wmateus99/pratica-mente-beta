@@ -1,0 +1,51 @@
+.s-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sobre {
+    display: flex;
+    width: 400vw; /* 4 seções = 400% da viewport */
+    height: 100vh;
+}
+
+.sobre > div {
+    flex: 0 0 100vw; /* cada div ocupa a tela inteira */
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.aba { 
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aba p {
+    font-size: 30px;
+    max-width: 800px;
+    text-align: left;
+    position: relative;
+}
+.aba p::after {
+    content: "";
+    top: 0;
+    left: -30px;
+    background: #ffffff;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+}
+
+.aba ol {
+    max-width: 450px;
+}
+.aba ol li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
