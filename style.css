@@ -39,3 +39,10 @@ body {
     color: #d2d2d2;
     text-decoration: none;
 }
+
+.aviso {
+    margin: 0 5px;
+    font-size: 14px;
+    color: #ff0000;
+    font-weight: bold;
+}
