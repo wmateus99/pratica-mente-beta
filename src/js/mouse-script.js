@@ -316,51 +316,60 @@ document.addEventListener('DOMContentLoaded', function() {
         createPrecisionTarget();
     }
     
+    let currentTargetNumber = 1; // contador do número da bola
+
     function createPrecisionTarget() {
         if (!isPlaying) return;
-        
+
         const target = document.createElement('div');
         target.className = 'target';
-        
+
         // Tamanho entre 15 e 30px
         const size = Math.floor(Math.random() * 16) + 15;
         target.style.width = `${size}px`;
         target.style.height = `${size}px`;
-        
+
+        // Número da bola
+        target.textContent = currentTargetNumber;
+        target.style.fontSize = `${Math.floor(size * 0.6)}px`; // 60% do tamanho da bola
+
         // Posição aleatória
         const maxX = gameDisplay.clientWidth - size;
         const maxY = gameDisplay.clientHeight - size;
         const posX = Math.floor(Math.random() * maxX);
         const posY = Math.floor(Math.random() * maxY);
-        
+
         target.style.left = `${posX}px`;
         target.style.top = `${posY}px`;
-        
-        // Alvo desaparece após 2s se não for clicado
+
+        // Alvo desaparece após 2s
         const disappearTimeout = setTimeout(() => {
             if (target.parentNode) {
                 target.remove();
+                currentTargetNumber++; // incrementa para o próximo alvo
                 createPrecisionTarget();
             }
         }, 2000);
-        
+
         // Clique no alvo
         target.addEventListener('click', () => {
             clearTimeout(disappearTimeout);
             target.remove();
             targetsClicked++;
             score += 30;
-            // scoreElement.textContent = score;
-            
+
+            currentTargetNumber++; // incrementa para o próximo alvo
+
             if (targetsClicked < totalTargets) {
                 setTimeout(createPrecisionTarget, 300);
             } else {
                 completeLevel();
             }
         });
-        
+
         gameDisplay.appendChild(target);
     }
+
     
     // ==============================
     // CONCLUSÃO DE NÍVEL
