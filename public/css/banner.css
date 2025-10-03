@@ -1,0 +1,53 @@
+.top-banner {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    padding: 5px 15px;
+    flex-wrap: wrap;
+    min-height: 60px;
+    text-align: center;
+    align-items: center;
+    background: #0f1724;
+    justify-content: space-between;
+}
+.countdown {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+}
+.timebox {
+    text-align: center;
+}
+.number {
+    font-size: 16px;
+    font-weight: 700;
+}
+.label {
+    font-size: 10px;
+}
+.actions {
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.actions button {
+    background: #7c3aed;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+.actions button:hover {
+    background: #5b21b6;
+}
+.message {
+    font-size: 14px;
+    margin-top: 2px;
+    color: #ddd;
+}
