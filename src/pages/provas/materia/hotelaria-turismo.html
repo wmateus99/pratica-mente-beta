@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/public/css/provas.css" />
+    <title>Prova de Informática Essencial</title>
+    <!-- CDN SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<style>
+	.regra {
+		padding: 10px;
+		margin: 10px auto;
+		font-style: italic;
+	}
+</style>
+</head>
+<body>
+    <div class="nav-menu">
+        <h2 class="title-prova">Prova Final de Informática Essencial</h2>
+    </div>
+
+    <div class="container">
+        <section class="content">
+			<div class="card-question">
+				<div class="box-alternatives">
+					<div class="box-question display-none">
+						<span class="question">
+							Objetivo
+						</span>
+					</div>
+					<div class="regra display-none">
+						<span>
+							A Avaliação Final tem como objetivo testar o conhecimento e as habilidades adquiridas ao longo do curso em conceitos fundamentais da informática. A prova abrange tópicos como história do computador, sistema operacional, planilhas eletrônicas, entre outros assuntos visto durante o curso, preparando o aluno para lidar com ferramentas tecnológicas no cotidiano e no ambiente profissional.  
+						</span>
+					</div>
+					<br>
+					<div class="box-question">
+						<span class="question">
+							Permissões e Proibições
+						</span>
+					</div>
+					<div class="regra">
+						<span>
+							É proibido o uso do celular durante a execução da avaliação, caso for avistado (a) usando o celular, o professor irá chamar a sua atenção. Em caso de teimosia, o professor irá cancelar sua avaliação.
+						</span>
+					</div>
+					<div class="regra">
+						<span>
+							Regra que seu professor deve seguir: Durante a execução da avaliação, é proibido dizer ao aluno se determinada questão está correta ou não, mas isso não impede de tirar as dúvidas, mas sem dar a resposta diretamente.
+						</span>
+					</div>
+					<div class="box-question display-none">
+						<span class="question">
+							Links
+						</span>
+					</div>
+					<div class="display-none">
+						<br>
+						<a href="/src/pages/provas/ranking-informatica-essencial.html">Quero ver minha nota e de outros alunos!</a>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="1">
+				<div class="box-question">
+					<span class="question">
+						1. Qual é a principal função de um hotel?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Proporcionar entretenimento apenas
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Oferecer hospedagem e serviços aos hóspedes
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							
+							Servir apenas refeições
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Organizar passeios turísticos
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="2">
+				<div class="box-question">
+					<span class="question">
+						2. A comunicação eficaz entre funcionários e hóspedes deve ser: 
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Rápida e sem formalidade
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Clara, educada e objetiva
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							
+							Apenas por escrito
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+                            Somente entre gerência e cliente
+                        </span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="3">
+				<div class="box-question">
+					<span class="question">
+						3. Qual é a principal vantagem da reserva antecipada para o hóspede?  
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Evitar contato com a recepção
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							
+							Garantir disponibilidade e melhores condições
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Pagar mais caro pelo serviço
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Aumentar a fila no check-in
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="4">
+				<div class="box-question">
+					<span class="question">
+						4. Qual setor do hotel é considerado o “cartão de visita” para o cliente? 
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Governança
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Cozinha
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Recepção
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Administração
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="5">
+				<div class="box-question">
+					<span class="question">
+						5.  Qual é a função principal da governança no hotel?
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Cuidar do financeiro
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Manutenção e limpeza dos apartamentos
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Vender pacotes turísticos
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Controlar reservas
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="6">
+				<div class="box-question">
+					<span class="question">
+						6. O setor de A&B tem como responsabilidade:
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							
+							Cuidar da recepção
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Fazer manutenção dos quartos
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Organizar eventos esportivos
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Atender às necessidades de alimentação e bebidas dos hóspedes
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="7">
+				<div class="box-question">
+					<span class="question">
+						7. O check-out é o processo de:
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Entrada do hóspede no hotel
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Solicitação de reservas
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Saída e acerto de despesas do hóspede
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Limpeza do apartamento
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="8">
+				<div class="box-question">
+					<span class="question">
+						8. O turismo pode ser definido como:
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Atividade de deslocamento e permanência temporária em locais diferentes do habitual
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Somente viagens internacionais
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Exclusivo para lazer
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Apenas para fins de negócios
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="9">
+				<div class="box-question">
+					<span class="question">
+						9. O papel principal de uma agência de turismo é:
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Hospedar cliente
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Intermediar serviços de viagem e atendimento ao cliente
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Preparar refeições
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Limpar apartamentos
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-question" data-question-id="10">
+				<div class="box-question">
+					<span class="question">
+						10. O que influencia diretamente a demanda turística? 
+					</span>
+				</div>
+				<div class="box-alternatives">
+					<div class="alternative" data-alternative="A">
+						<span class="alt-identifier">[A]</span>
+						<span>
+							Localização, atrativos, renda e tempo disponível
+						</span>
+					</div>
+					<div class="alternative" data-alternative="B">
+						<span class="alt-identifier">[B]</span>
+						<span>
+							Apenas clima
+						</span>
+					</div>
+					<div class="alternative" data-alternative="C">
+						<span class="alt-identifier">[C]</span>
+						<span>
+							Somente a fama de um hotel
+						</span>
+					</div>
+					<div class="alternative" data-alternative="D">
+						<span class="alt-identifier">[D]</span>
+						<span>
+							Quantidade de funcionários
+						</span>
+					</div>
+				</div>
+			</div>
+            <form class="form-prova" onsubmit="return false;">
+                <div class="box-input">
+                    <label for="cod">Código de Usuário</label>
+                    <input type="number" name="cod" id="cod" autocomplete="off" />
+                </div>
+                <div class="box-input">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" autocomplete="off" />
+                </div>
+            </form>
+            <div class="card-question">
+                <button id="btn-resultado" type="button" disabled>Ver Resultado</button>
+            </div>
+        </section>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+        import { getFirestore, collection, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+
+        // Configuração do Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyAAs7eEcbQstmReeMns3xTC531ZxQpXDTk",
+            authDomain: "pratica-mente-e9b23.firebaseapp.com",
+            projectId: "pratica-mente-e9b23",
+            storageBucket: "pratica-mente-e9b23.firebasestorage.app",
+            messagingSenderId: "1028599666989",
+            appId: "1:1028599666989:web:6a3b8c83466c8e50901ba4",
+            measurementId: "G-9R78EX5XSW"
+        };
+
+        // Inicializa Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        getAnalytics(app);
+
+        // Carrega gabarito do Firestore
+        const docRef = doc(db, "hotelaria-turismo", "gabarito");
+        const docSnap = await getDoc(docRef);
+
+        let gabarito = {};
+        if (docSnap.exists()) {
+            gabarito = docSnap.data();
+            console.log("Gabarito carregado!");
+        } else {
+            console.error("Gabarito não encontrado no Firestore!");
+        }
+
+        // Variáveis globais
+        const respostasAluno = {};
+        const totalQuestoes = Object.keys(gabarito).length;
+        const btnResultado = document.getElementById("btn-resultado");
+
+        // Segurança ao fechar/recarregar a página (opcional)
+        // window.addEventListener("beforeunload", function (event) {
+        //     event.preventDefault();
+        //     event.returnValue = "";
+        // });
+
+        // Bloqueio do menu de contexto
+        document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+        // Verifica se todas as questões foram respondidas
+        function verificarTodasRespondidas() {
+            if (Object.keys(respostasAluno).length === totalQuestoes) {
+                btnResultado.disabled = false;
+            }
+        }
+
+        // Captura cliques nas alternativas
+        document.querySelectorAll(".card-question[data-question-id]").forEach((card) => {
+            const alternatives = card.querySelectorAll(".alternative");
+
+            alternatives.forEach((alt) => {
+                alt.addEventListener("click", () => {
+                    // Reseta visual das alternativas
+                    alternatives.forEach((a) => a.classList.remove("alternative-active"));
+
+                    // Marca a escolhida
+                    alt.classList.add("alternative-active");
+
+                    // Salva resposta
+                    const questionId = card.dataset.questionId;
+                    const selectedAlt = alt.dataset.alternative;
+                    respostasAluno[questionId] = selectedAlt;
+
+                    verificarTodasRespondidas();
+                });
+            });
+        });
+
+        // Clique no botão → mostra resultado + salva no Firestore
+        btnResultado.addEventListener("click", async () => {
+            const cod = document.getElementById("cod").value.trim();
+            const nome = document.getElementById("nome").value.trim();
+
+            // Verificação de campos obrigatórios
+            if (!cod || !nome) {
+                await Swal.fire({
+                    icon: "warning",
+                    title: "Campos faltando",
+                    text: "Por favor, preencha o código e o nome antes de ver o resultado."
+                });
+                return;
+            }
+
+            // Verifica se já fez o teste
+            const alunoRef = doc(db, "hotelaria-turismo-notas", cod);
+            const alunoSnap = await getDoc(alunoRef);
+
+            if (alunoSnap.exists()) {
+                await Swal.fire({
+                    icon: "info",
+                    title: "Teste já realizado",
+                    text: "Você já realizou este teste. Apenas o professor Mateus pode liberar uma nova tentativa mediante solicitação de outro professor."
+                });
+                return;
+            }
+
+            // Corrige prova
+            let acertos = 0;
+            document.querySelectorAll(".card-question[data-question-id]").forEach((card) => {
+                const questionId = card.dataset.questionId;
+                const alternativas = card.querySelectorAll(".alternative");
+
+                alternativas.forEach((alt) => {
+                    const altId = alt.dataset.alternative;
+
+                    if (altId === gabarito[questionId]) {
+                        alt.style.backgroundColor = "#4CAF50";
+                        alt.style.color = "#fff";
+                    } else if (respostasAluno[questionId] === altId && altId !== gabarito[questionId]) {
+                        alt.style.backgroundColor = "#f44336";
+                        alt.style.color = "#fff";
+                    } else {
+                        alt.style.backgroundColor = "";
+                        alt.style.color = "";
+                    }
+                });
+
+                if (respostasAluno[questionId] === gabarito[questionId]) {
+                    acertos++;
+                }
+            });
+
+            // Calcula resultado
+            const percentual = (acertos / totalQuestoes) * 100;
+            let mensagem = "";
+
+            if (percentual >= 50) {
+                mensagem = `Parabéns, ${nome}! Você acertou ${acertos} de ${totalQuestoes} questões (${percentual.toFixed(2)}%). Continue assim! 🎉`;
+            } else {
+                mensagem = `Não desanime, ${nome}. Você acertou ${acertos} de ${totalQuestoes} questões (${percentual.toFixed(2)}%). Estude mais e você vai melhorar! 💪`;
+            }
+
+            // Mostra resultado
+            await Swal.fire({
+                icon: percentual >= 50 ? "success" : "warning",
+                title: "Resultado da Prova",
+                text: mensagem
+            });
+
+            // Salva nota no Firestore
+            try {
+                await setDoc(alunoRef, {
+                    nome: nome,
+                    nota: percentual.toFixed(2),
+                    acertos: acertos
+                });
+                console.log("Nota salva com sucesso!");
+            } catch (error) {
+                console.error("Erro ao salvar nota:", error);
+            }
+        });
+    </script>
+</body>
+</html>

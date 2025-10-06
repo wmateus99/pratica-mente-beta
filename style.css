@@ -47,3 +47,7 @@ body {
     color: #ff0000;
     font-weight: bold;
 }
+
+.display-none {
+    display: none;
+}

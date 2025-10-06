@@ -114,3 +114,7 @@ input {
     border-radius: 10px;
     background: #175DA3;
 }
+
+.display-none {
+    display: none;
+}
