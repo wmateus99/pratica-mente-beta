@@ -17,15 +17,17 @@
         <div class="carousel owl-carousel">
             <!-- Aula 1 — Introdução ao HTML -->
 
-            <!-- Slide 1 — O que é HTML -->
+            <!-- Slide 1 -->
             <div class="slide">
                 <div class="left">
                     <div class="box-conteudo">
-                        <h2>Slide 1 — O que é HTML</h2>
-                        <p>HTML (HyperText Markup Language) é a linguagem de marcação utilizada para criar páginas web. Ele organiza o conteúdo em blocos chamados <strong>tags</strong>, que formam elementos que os navegadores interpretam e exibem para o usuário.</p>
+                        <h2>Introdução ao HTML</h2>
+                        <p>Nesta leitura você vai entender o que é HTML, para que ele serve e como montar a estrutura mínima de uma página web. Ao final você será capaz de criar um arquivo <span class="code">index.html</span>, abrir no navegador e ver o seu primeiro site simples.</p>
                     </div>
                     <div class="box-exemplo">
-                        <div class="box-codes"> </div>
+                        <div class="box-codes" style="background-image: url('/public/img/pessoa-frente-computador.png');">
+                            <a href="https://br.freepik.com/fotos-gratis/pessoa-em-frente-ao-computador-trabalhando-em-html_36189959.htm#fromView=search&page=1&position=3&uuid=95215043-cd1b-480b-b440-9aa78bc17275&query=html">Imagem de freepik</a>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
@@ -36,15 +38,19 @@
                 </div>
             </div>
 
-            <!-- Slide 2 — Estrutura básica de um documento -->
+            <!-- Slide 2-->
             <div class="slide">
                 <div class="left">
                     <div class="box-conteudo">
-                        <h2>Slide 2 — Estrutura básica de um documento</h2>
-                        <p>Um documento HTML começa com a declaração <code>&lt;!DOCTYPE html&gt;</code>, seguida pelas tags <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>. O <code>&lt;head&gt;</code> contém informações da página, como título e links para estilos, enquanto o <code>&lt;body&gt;</code> abriga o conteúdo visível.</p>
+                        <h2>O que é HTML?</h2>
+                        <p>
+                            HTML (<span class="code">HyperText Markup Language</span>) é uma linguagem de marcação: ela descreve a estrutura do conteúdo de uma página, títulos, parágrafos, listas, imagens e links. Diferente de linguagens de programação, o HTML não “computar” lógica; ele organiza o que será exibido pelo navegador. Pense no HTML como o esqueleto e o conteúdo do seu site.
+                        </p>
                     </div>
                     <div class="box-exemplo">
-                        <div class="box-codes"> </div>
+                        <div class="box-codes" style="background-image: url('/public/img/html-transparente-ilustracao.jpg');">
+                            <a href="https://br.freepik.com/fotos-gratis/conceito-de-colagem-de-html-e-css_36295536.htm#fromView=search&page=1&position=49&uuid=86d7b8e3-3f27-44cf-90b0-c439ecb67fa4&query=%40freepik+html">Imagem de freepik</a>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
@@ -55,15 +61,23 @@
                 </div>
             </div>
 
-            <!-- Slide 3 — Títulos -->
+            <!-- Slide 3 -->
             <div class="slide">
                 <div class="left">
                     <div class="box-conteudo">
-                        <h2>Slide 3 — Títulos</h2>
-                        <p>O HTML possui seis níveis de títulos, de <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>. O <code>&lt;h1&gt;</code> representa o título principal da página, e os demais títulos organizam seções e subseções. Usar títulos corretamente melhora a hierarquia e a compreensão do conteúdo.</p>
+                        <h2>Estrutura Básica do HTML</h2>
+                        <p>
+                            Agora veja este exemplo de código HTML básico, que cria uma estrutura simples de página web. Ele define o tipo de documento, inclui um título na aba do navegador e exibe no corpo da página um cabeçalho com o texto “<span class="code">Olá Mundo!</span>” seguido de um parágrafo introdutório. Nas próximas etapas, cada parte desse código será explicada em detalhes.
+                        </p>
                     </div>
                     <div class="box-exemplo">
-                        <div class="box-codes"> </div>
+                        <div class="box-codes">
+                            <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="html" data-slug-hash="ByjRYNx" data-pen-title="Estrutura básica de uma página" data-editable="true" data-user="WandersonMateus" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/WandersonMateus/pen/ByjRYNx">
+                            Estrutura básica de uma página</a> by WandersonMateus (<a href="https://codepen.io/WandersonMateus">@WandersonMateus</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
@@ -74,15 +88,27 @@
                 </div>
             </div>
 
-            <!-- Slide 4 — Parágrafos -->
+            <!-- Slide 4 -->
             <div class="slide">
                 <div class="left">
                     <div class="box-conteudo">
-                        <h2>Slide 4 — Parágrafos</h2>
-                        <p>A tag <code>&lt;p&gt;</code> é usada para criar parágrafos, organizando o texto em blocos legíveis. Cada parágrafo representa uma ideia ou conjunto de informações, garantindo uma leitura mais clara e agradável para o usuário.</p>
+                        <h2>Explicação do código (Parte 1)</h2>
+                        <p>
+                            <span class="code">&lt;!DOCTYPE html&gt;</span> — aviso para o navegador de que este documento usa HTML5. É uma linha técnica importante no começo.
+                            <br><br>
+                            <span class="code">&lt;html&gt;...&lt;/html&gt;</span> — envolve todo o conteúdo da página; é a tag raiz do documento.
+                            <br><br>
+                            <span class="code">&lt;head&gt;...&lt;/head&gt;</span> —  contém informações sobre a página que não aparecem diretamente no corpo (como o título que aparece na aba do navegador). Aqui também se colocam links para estilos e metadados.
+                        </p>
                     </div>
                     <div class="box-exemplo">
-                        <div class="box-codes"> </div>
+                        <div class="box-codes">
+                            <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="html" data-slug-hash="ByjRYNx" data-pen-title="Estrutura básica de uma página" data-editable="true" data-user="WandersonMateus" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/WandersonMateus/pen/ByjRYNx">
+                            Estrutura básica de uma página</a> by WandersonMateus (<a href="https://codepen.io/WandersonMateus">@WandersonMateus</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
@@ -93,15 +119,29 @@
                 </div>
             </div>
 
-            <!-- Slide 5 — Combinando títulos e parágrafos -->
+            <!-- Slide 5 -->
             <div class="slide">
                 <div class="left">
                     <div class="box-conteudo">
-                        <h2>Slide 5 — Combinando títulos e parágrafos</h2>
-                        <p>Uma página bem estruturada combina títulos e parágrafos para criar hierarquia e organizar o conteúdo. O título apresenta o tema, enquanto os parágrafos detalham as informações, tornando a leitura clara e objetiva.</p>
+                        <h2>Explicação do código (Parte 2)</h2>
+                        <p>
+                            <span class="code">&lt;title&gt;</span> — o texto dentro desta tag aparece na aba do navegador; é importante para identificação da página.
+                            <br><br>
+                            <span class="code">&lt;body&gt;...&lt;/body&gt;</span> — tudo que estiver aqui será exibido na tela: textos, imagens, links, botões.
+                            <br><br>
+                            <span class="code">&lt;h1&gt;...&lt;/h1&gt;</span> —  título principal da página (ex.: cabeçalho). Existem também <span class="code">&lt;h2&gt;</span>, <span class="code">&lt;h3&gt;</span>... para subtítulos.
+                            <br><br>
+                            <span class="code">&lt;p&gt;...&lt;/p&gt;</span> —  parágrafo; usado para blocos de texto.
+                        </p>
                     </div>
                     <div class="box-exemplo">
-                        <div class="box-codes"> </div>
+                        <div class="box-codes">
+                            <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="html" data-slug-hash="ByjRYNx" data-pen-title="Estrutura básica de uma página" data-editable="true" data-user="WandersonMateus" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/WandersonMateus/pen/ByjRYNx">
+                            Estrutura básica de uma página</a> by WandersonMateus (<a href="https://codepen.io/WandersonMateus">@WandersonMateus</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
@@ -112,15 +152,99 @@
                 </div>
             </div>
 
-            <!-- Slide 6 — Reflexão -->
+            <!-- Slide 6 -->
             <div class="slide">
                 <div class="left">
                     <div class="box-conteudo">
-                        <h2>Slide 6 — Reflexão</h2>
-                        <p>Compreender HTML é essencial para qualquer pessoa que queira criar websites. Ele fornece a estrutura e os elementos que permitem transformar ideias em páginas interativas e funcionais. <a href="./02.html">Próxima Aula — Estrutura de texto e links</a></p>
+                        <h2>Configuração do Ambiente</h2>
+                        <p>
+                            Antes de escrever o código, é necessário ter um editor de código instalado no computador. Nesta etapa, utilizaremos o Visual Studio Code (VS Code), um dos editores mais usados por desenvolvedores web. Para aprender a baixá-lo e instalá-lo corretamente, assista ao vídeo do canal "Canal TI", que explica todo o processo passo a passo.
+                        </p>
                     </div>
                     <div class="box-exemplo">
-                        <div class="box-codes"> </div>
+                        <div class="box-codes">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/oDgjp7PfX7c?si=VqXOWJn5-u9jmNVX&amp;start=123" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box-action">
+                        <button class="anterior">Anterior</button>
+                        <button class="proximo">Próximo</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="slide">
+                <div class="left">
+                    <div class="box-conteudo">
+                        <h2>Primeira Página</h2>
+                        <p>
+                            <span class="code">01 - </span> Crie uma pasta na Área de Trabalho e abra com Vscode. <br><br>
+                            <span class="code">02 - </span> Com o Vscode aberto, crie um arquivo html (<span class="code">index.html</span>). <br><br>
+                            <span class="code">03 - </span> Dentro do arquivo html, digite <span class="code"> ! </span> e aperte <b>Enter</b> para o programa adicionar o código base. <br><br>
+                            <span class="code">03 - </span> Agora digite o código de exemplo dentro do corpo da página (<span class="code">&lt;body&gt;</span>)
+                        </p>
+                    </div>
+                    <div class="box-exemplo">
+                        <div class="box-codes">
+                            <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="html" data-slug-hash="RNrVxLR" data-pen-title="Primeira Página" data-editable="true" data-user="WandersonMateus" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/WandersonMateus/pen/RNrVxLR">
+                            Primeira Página</a> by WandersonMateus (<a href="https://codepen.io/WandersonMateus">@WandersonMateus</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box-action">
+                        <button class="anterior">Anterior</button>
+                        <button class="proximo">Próximo</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="slide">
+                <div class="left">
+                    <div class="box-conteudo">
+                        <h2>Primeira Página</h2>
+                        <p>
+                            <span class="code">01 - </span> Depois de digitar todo o código, clique com o botão direito do mouse sobre o arquivo e, em seguida, selecione a opção .<span class="code">“Open with Live Server”.</span> <br><br>
+                            <span class="code">02 - </span> Se essa opção não estiver aparecendo, significa que você precisa instalar a extensão (<span class="code">Liver Server</span>). <br><br>
+                            <span class="code">03 - </span> Depois que a extensão estiver instalada, repita o passo 1 para abrir o arquivo e visualizar o resultado do seu primeiro site diretamente no navegador.
+                        </p>
+                    </div>
+                    <div class="box-exemplo">
+                        <div class="box-codes">
+                            <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="html" data-slug-hash="RNrVxLR" data-pen-title="Primeira Página" data-editable="true" data-user="WandersonMateus" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/WandersonMateus/pen/RNrVxLR">
+                            Primeira Página</a> by WandersonMateus (<a href="https://codepen.io/WandersonMateus">@WandersonMateus</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box-action">
+                        <button class="anterior">Anterior</button>
+                        <button class="proximo">Próximo</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9 -->
+            <div class="slide">
+                <div class="left">
+                    <div class="box-conteudo">
+                        <h2>Reflexão</h2>
+                        <p>Compreender HTML é essencial para qualquer pessoa que queira criar websites. Ele fornece a estrutura e os elementos que permitem transformar ideias em páginas interativas e funcionais. <a href="./02.html">Próxima Aula</a></p>
+                    </div>
+                    <div class="box-exemplo">
+                        <div class="box-codes" style="background-image: url('/public/img/html-transparente-ilustracao.jpg');">
+                            <a href="https://br.freepik.com/fotos-gratis/conceito-de-colagem-de-html-e-css_36295536.htm#fromView=search&page=1&position=49&uuid=86d7b8e3-3f27-44cf-90b0-c439ecb67fa4&query=%40freepik+html">Imagem de freepik</a>
+                        </div>
                     </div>
                 </div>
                 <div class="right">

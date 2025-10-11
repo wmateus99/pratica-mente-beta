@@ -11,6 +11,11 @@ html {
     font-family: "Inter", sans-serif;
 }
 
+*::selection {
+    color: #ff058f;
+    background: #dedede;
+}
+
 body {
     background: #02273f;
 }
@@ -68,7 +73,7 @@ body {
     padding: 5px;
     display: flex;
     gap: 20px 0px;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     justify-content: center;
 }
@@ -76,7 +81,6 @@ body {
     margin: 0 10%;
     font-size: 24px;
     max-width: 450px;
-    text-align: center;
 }
 .box-conteudo p {
     margin: 0 10%;
@@ -88,7 +92,7 @@ body {
 .box-exemplo {
     padding: 15px;
     border-radius: 8px;
-    background-color: #000000;
+    background-color: #02273f;
 }
 
 .box-codes {
@@ -96,7 +100,22 @@ body {
     padding: 10px;
     text-align: left;
     border-radius: 8px;
+    position: relative;
     background: #232323;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-codes a {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    background: #02273f;
+    text-decoration: none;
+    left: 10px;
+    color: #ffffff;
+    bottom: 10px;
+    position: absolute;
 }
 
 .box-action {
@@ -109,6 +128,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
     color: #ffffff;
+    user-select: none;
     border-radius: 8px;
     background: #175DA3;
     padding: 0.8rem 1.5rem;
@@ -120,7 +140,16 @@ body {
 }
 
 
+.image-demo {
+    width: 100%;
+}
 
+.code {
+    font-weight: 500;
+    color: #ff058f;
+    border-radius: 10px;
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+}
 
 
 /* Responsivo */
