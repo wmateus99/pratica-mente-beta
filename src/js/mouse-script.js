@@ -346,7 +346,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const disappearTimeout = setTimeout(() => {
             if (target.parentNode) {
                 target.remove();
-                currentTargetNumber++; // incrementa para o próximo alvo
                 createPrecisionTarget();
             }
         }, 2000);
