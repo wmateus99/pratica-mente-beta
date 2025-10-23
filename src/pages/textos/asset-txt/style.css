@@ -11,6 +11,10 @@
     --dropdown-hover: #e0e0e0;
 }
 
+.toolbar-buttons {
+    display: none;
+}
+
 .main {
     user-select: none;
 }
