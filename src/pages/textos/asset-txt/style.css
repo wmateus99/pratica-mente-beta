@@ -11,10 +11,6 @@
     --dropdown-hover: #e0e0e0;
 }
 
-.toolbar-buttons {
-    display: none;
-}
-
 .main {
     user-select: none;
 }
@@ -171,6 +167,10 @@ header {
 
 b {
     color: var(--primary-color);
+}
+
+.toolbar-buttons {
+    opacity: 0;
 }
 
 @media (max-width: 768px) {
