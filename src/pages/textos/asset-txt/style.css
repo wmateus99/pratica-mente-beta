@@ -169,6 +169,10 @@ b {
     color: var(--primary-color);
 }
 
+.toolbar-buttons {
+    opacity: 0;
+}
+
 @media (max-width: 768px) {
     .split-container {
         flex-direction: column;
