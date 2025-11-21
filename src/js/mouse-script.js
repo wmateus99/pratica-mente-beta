@@ -383,16 +383,36 @@ document.addEventListener('DOMContentLoaded', function() {
         gameDisplay.innerHTML = `
             <h3>Nível ${currentLevel.replace('level', '')} Concluído!</h3>
             <p>Pontuação: ${score}</p>
-            <p>Clique em "Iniciar" para tentar novamente ou selecione outro nível.</p>
+            <p>Aguarde, carregando próximo nível...</p>
         `;
+
+        // Determinar o próximo nível
+        const levels = ['level1', 'level2', 'level3', 'level4'];
+        let currentIndex = levels.indexOf(currentLevel);
         
-        if (completedLevels.length === 5) {
-            showCongratulations();
+        if (currentIndex < levels.length - 1) {
+            currentLevel = levels[currentIndex + 1];
+            
+            // Atualizar visualmente o botão ativo
+            levelButtons.forEach(btn => btn.classList.remove('active'));
+            const nextBtn = Array.from(levelButtons).find(btn => btn.getAttribute('data-level') === currentLevel);
+            if (nextBtn) {
+                nextBtn.classList.add('active');
+            }
+            
+            // Após 2 segundos, iniciar o próximo nível
+            setTimeout(() => {
+                resetGame();
+                startGame();
+            }, 2000);
         } else {
-            isPlaying = false;
-            startBtn.disabled = false;
+            // Se for o último nível, mostrar a tela de parabéns
+            setTimeout(() => {
+                showCongratulations();
+            }, 2000);
         }
     }
+
     
     // ==============================
     // MENSAGEM FINAL

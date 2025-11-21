@@ -30,36 +30,29 @@ document.addEventListener('DOMContentLoaded', function() {
             "asdf jklç asdf jklç asdf jklç",
             "qwer uiop qwer uiop qwer uiop",
             "çlkj fdsa çlkj fdsa çlkj fdsa",
-            "asjk dflç asjk dflç asjk dflç",
-            "tttt ssss iiii"
+            "escola tsi informatica"
         ],
         level2: [
             "á é í ó ú",
             "O café está quente",
             "Não há água na geladeira",
             "Você está aprendendo rápido",
-            "É importante praticar todos os dias"
         ],
         level3: [
             "â ê î ô û",
             "Você está com o chapéu",
             "Nós vamos ao Amazonas",
-            "O pôr do sol está lindo",
             "Eles têm muitos amigos"
         ],
         level4: [
             "computador teclado mouse monitor",
             "internet navegador programa arquivo",
             "documento pasta imprimir salvar",
-            "tecnologia informação digital virtual",
-            "aprendizado conhecimento habilidade prática"
         ],
         level5: [
             "@ # $ % & * ( )",
             "email@exemplo.com.br",
-            "Senha: Abc123!@#",
             "2²² aªª 1¹¹",
-            "Telefone: (11) 98765-4321"
         ]
     };
     
