@@ -1,6 +1,7 @@
 const atividades = {
-    introducaoInformatica: 1,
+    introducaoInformatica: 6,
     windows: 8,
+    windows11: 11,
     internet: 2,
     word: 5,
     excel: 4,
