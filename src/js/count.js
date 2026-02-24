@@ -5,7 +5,7 @@ const atividades = {
     internet: 2,
     word: 5,
     excel: 4,
-    excelAvancado: 5,
+    excelAvancado: 12,
     powerpoint: 0,
     photoshop: 0,
     coreldraw: 0,
