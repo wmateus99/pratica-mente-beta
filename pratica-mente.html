@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>...</title>
+
+    <!-- Link do RemixIcon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link do StyleSheet - Alerta Personalizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Link do GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Scrips Internos -->
+    <script src="/src/js/count.js" defer></script>
+</head>
+<body>
+    <div class="top-banner display-none">
+        <div class="countdown" style="display: none;">
+            <div class="timebox">
+                <div class="number" id="days">0</div>
+                <div class="label">dias</div>
+            </div>
+            <div class="timebox">
+                <div class="number" id="hours">00</div>
+                <div class="label">h</div>
+            </div>
+            <div class="timebox">
+                <div class="number" id="minutes">00</div>
+                <div class="label">min</div>
+            </div>
+            <div class="timebox">
+                <div class="number" id="seconds">00</div>
+                <div class="label">seg</div>
+            </div>
+        </div>
+        <div class="message"> 🎁 Indique 5 amigos e ganhe 2 cupons 🎁</div>
+        <div class="actions">
+            <button onclick="location.href='https://forms.gle/GEgSpsoMh8gMp2jV8'">Eu quero participar!</button>
+            <!-- <button onclick="location.href='https://forms.gle/GEgSpsoMh8gMp2jV8'">🎟️ 2 Cupons</button> -->
+        </div>
+    </div>
+
+    <header>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="/public/img/logo.svg" alt="Logo do Site">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="/index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/auxiliares/auxiliares.html">Auxiliares</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#atividades">Atividades</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/textos/textos.html">Textos</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/provas/provas.html">Provas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-rigth">
+            <a href="/src/pages/sobre/sobre.html">
+                <i class="ri-user-star-line"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="content-home">
+        <div class="title">
+            <h1>
+                Bem-vindo (a) ao seu ambiente de prática!
+            </h1>
+            <p>
+                Aqui você encontrará um espaço para praticar e evoluir suas habilidades. Este ambiente foi criado para apoiar seu crescimento de forma prática e eficiente.
+            </p>
+        </div>
+        <div class="cards-assets">
+            <div class="card">
+                <h2>Primeira Aula</h2>
+                <span>
+                    Todo grande começo começa com o primeiro passo. Aproveite sua primeira aula!
+                </span>
+                <a href="/src/pages/primeira-aula/mouse.html">Acessar</a>
+            </div>
+            <div class="card">
+                <h2>Jogo de Digitação</h2>
+                <span>
+                    Desafie seus dedos e turbine sua velocidade no jogo de digitação!
+                </span>
+                <a href="/src/pages/word-game/digitacao.html">Acessar</a>
+            </div>
+            <div class="card">
+                <h2>Auxiliares</h2>
+                <span>
+                    Acesse arquivos auxiliares para reforçar seu aprendizado e prática!
+                </span>
+                <a href="/src/pages/auxiliares/auxiliares.html">Acessar</a>
+            </div>
+            <div class="card">
+                <h2>Plataforma TsiFlix</h2>
+                <span>
+                    Conhecimento na tela, no seu tempo: explore tudo o que a TSIFLIX oferece!
+                </span>
+                <a href="https://eadon.com.br/sign-in">Acessar</a>
+            </div>
+        </div>
+    </div>
+    <div class="content-atividades">
+        <div class="title">
+            <h1>
+                Seu espaço de atividades em informática!
+            </h1>
+            <p>
+                Aqui você encontra desafios práticos para treinar, aprender e evoluir suas habilidades!
+            </p>
+        </div>
+        <div class="cards" id="atividades">
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="introducaoInformatica">1</span>
+                </div>
+                <h2>Introdução a Informática</h2>
+                <span>
+                    Conheça os principais conceitos e explore a base para todas as atividades digitais!
+                </span>
+                <a href="/src/pages/atividades/introducao/introducao-informatica.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="windows"></span>
+                </div>
+                <h2>Windows 10</h2>
+                <span>
+                    Pratique comandos e funções que vão facilitar sua rotina no sistema operacional!
+                </span>
+                <a href="/src/pages/atividades/windows/windows.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="windows11"></span>
+                </div>
+                <h2>Windows 11</h2>
+                <span>
+                    Desenvolva as habilidades que vão facilitar sua rotina no sistema operacional!
+                </span>
+                <a href="/src/pages/atividades/windows11/win11.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="internet"></span>
+                </div>
+                <h2>Internet</h2>
+                <span>
+                    Exercícios que ajudam a dominar pesquisas, navegação e segurança online!
+                </span>
+                <a href="/src/pages/atividades/internet/internet.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="word"></span>
+                </div>
+                <h2>Word</h2>
+                <span>
+                    Atividades voltadas para edição de textos, formatação e organização de documentos!
+                </span>
+                <a href="/src/pages/atividades/word/word.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="excel"></span>
+                </div>
+                <h2>Excel</h2>
+                <span>
+                    Desafios com cálculos, tabelas e gráficos para treinar sua produtividade!
+                </span>
+                <a href="/src/pages/atividades/excel/excel.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="excelAvancado">5</span>
+                </div>
+                <h2>Excel Avançado</h2>
+                <span>
+                    Desafie-se com problemas de Excel mais avançados para elevar suas habilidades.
+                </span>
+                <a href="/src/pages/atividades/excel-avancado/excel-avancado.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="powerpoint"></span>
+                </div>
+                <h2>PowerPoint</h2>
+                <span>
+                    Práticas criativas para montar apresentações envolventes e bem estruturadas!
+                </span>
+                <a href="/src/pages/atividades/powerpoint/powerpoint.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="photoshop"></span>
+                </div>
+                <h2>Photoshop</h2>
+                <span>
+                    Atividades para edição, montagem e aperfeiçoamento de imagens digitais!
+                </span>
+                <a href="/src/pages/atividades/photoshop/photoshop.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="coreldraw"></span>
+                </div>
+                <h2>CorelDraw</h2>
+                <span>
+                    Exercícios de criação gráfica para explorar formas, cores e composições!
+                </span>
+                <a href="/src/pages/atividades/coreldraw/coreldraw.html">Acessar</a>
+            </div>
+            <div class="card att">
+                <div class="quantidade">
+                    <span id="outros"></span>
+                </div>
+                <h2>Outros</h2>
+                <span>
+                    Atividades de assuntos variados, envolvendo múltiplos temas e diferentes campos de interesse.
+                </span>
+                <a href="/src/pages/atividades/outros/outros.html">Acessar</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- <div class="nada">
+        <a href="/src/pages/data-users/users.html">x</a>
+    </div> -->
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Entrada
+    gsap.utils.toArray(".card.att").forEach((card, i) => {
+        gsap.fromTo(card, 
+            {
+                opacity: 0,
+                y: 80,
+                scale: 0.5,
+                rotate: gsap.utils.random(-20, 20)
+            },
+            {
+                opacity: 1,
+                y: 0,
+                scale: 0.8,
+                rotate: 0,
+                duration: 0.2,
+                ease: "power3.out",
+                delay: i * 0.01,
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                }
+            }
+        );
+    });
+
+    // Hover criativo
+    gsap.utils.toArray(".card.att").forEach((card) => {
+        let hoverTween;
+
+        card.addEventListener("mouseenter", () => {
+            if (hoverTween) hoverTween.kill();
+            hoverTween = gsap.to(card, {
+                scale: 0.9,
+                y: -10,
+                rotate: gsap.utils.random(-5, 5),
+                duration: 0.15,
+                ease: "power2.out",
+                yoyo: true,
+                repeat: 1, // cria efeito de “pop”
+                boxShadow: "0px 25px 50px rgba(0,0,0,0.25)"
+            });
+        });
+
+        card.addEventListener("mouseleave", () => {
+            if (hoverTween) hoverTween.kill();
+            gsap.to(card, {
+                scale: 0.8,
+                y: 0,
+                rotate: 0,
+                duration: 0.2,
+                ease: "power3.out",
+                boxShadow: "0px 10px 20px rgba(0,0,0,0.1)"
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
